@@ -1,0 +1,693 @@
+.poko-card .poko-card-introduce {
+  padding-top: 160px;
+  background-image: url(/images/bg-introduce.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 203px;
+  position: relative;
+}
+.poko-card .poko-card-introduce > .container {
+  margin-top: 48px;
+}
+@media screen and (max-width: 1280px) {
+  .poko-card .poko-card-introduce > .container {
+    padding: 0 80px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .poko-card .poko-card-introduce > .container {
+    margin-top: 24px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card .poko-card-introduce {
+    background-image: url(/images/bg-card.png);
+    padding: 72px 20px 88px;
+  }
+  .poko-card .poko-card-introduce > .container {
+    margin-top: 44px;
+  }
+}
+.poko-card .poko-card-introduce .poko-card-introduce__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 250px;
+  column-gap: 250px;
+}
+@media screen and (max-width: 820px) {
+  .poko-card .poko-card-introduce .poko-card-introduce__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    row-gap: 50px;
+  }
+}
+.poko-card
+  .poko-card-introduce
+  .poko-card-introduce__inner
+  .poko-card-introduce__left {
+  max-width: 470px;
+  width: 100%;
+  order: 1;
+}
+@media screen and (max-width: 820px) {
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__left {
+    order: 2;
+  }
+}
+.poko-card
+  .poko-card-introduce
+  .poko-card-introduce__inner
+  .poko-card-introduce__left
+  .title {
+  color: #ffbc48;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 75px;
+}
+@media screen and (max-width: 820px) {
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__left
+    .title {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__left
+    .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.poko-card
+  .poko-card-introduce
+  .poko-card-introduce__inner
+  .poko-card-introduce__left
+  .offramp {
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid hsla(0, 0%, 100%, 0.08);
+  background: hsla(0, 0%, 100%, 0.08);
+  box-shadow: inset 0 2px 0 0 hsla(0, 0%, 100%, 0.11);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__left
+    .offramp {
+    padding: 14px;
+  }
+}
+.poko-card
+  .poko-card-introduce
+  .poko-card-introduce__inner
+  .poko-card-introduce__left
+  .offramp
+  p {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 47px;
+  color: #fff;
+}
+@media screen and (max-width: 820px) {
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__left
+    .offramp
+    p {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__left
+    .offramp
+    p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.poko-card
+  .poko-card-introduce
+  .poko-card-introduce__inner
+  .poko-card-introduce__left
+  .desc {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+@media screen and (max-width: 820px) {
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__left
+    .desc {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__left
+    .desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.poko-card
+  .poko-card-introduce
+  .poko-card-introduce__inner
+  .poko-card-introduce__left
+  .docs-link {
+  color: #e06f37;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 12px 24px;
+}
+.poko-card
+  .poko-card-introduce
+  .poko-card-introduce__inner
+  .poko-card-introduce__left
+  .docs-link
+  svg
+  path {
+  fill: #e06f37;
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__left
+    .docs-link {
+    padding: 12px 0;
+  }
+}
+.poko-card
+  .poko-card-introduce
+  .poko-card-introduce__inner
+  .poko-card-introduce__right {
+  order: 2;
+}
+@media screen and (max-width: 820px) {
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__right {
+    order: 1;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__right,
+  .poko-card
+    .poko-card-introduce
+    .poko-card-introduce__inner
+    .poko-card-introduce__right
+    iframe {
+    width: 100%;
+  }
+}
+.poko-card .poko-card-introduce .poko-introduce-marquee .poko-introduce-text {
+  color: #ffbc48;
+  line-height: 40px;
+}
+@media screen and (max-width: 820px) {
+  .poko-card .poko-card-introduce .poko-introduce-marquee .poko-introduce-text {
+    line-height: 40px;
+  }
+}
+.poko-card .poko-card-benefits {
+  background-color: #f9f9f9;
+  padding: 65px 0 40px;
+  background-image: url(/images/pattern-card.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -7%;
+}
+@media screen and (max-width: 1440px) {
+  .poko-card .poko-card-benefits {
+    background-position: 0 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .poko-card .poko-card-benefits {
+    padding: 65px 20px 40px;
+    background-position: 0 3%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .poko-card .poko-card-benefits {
+    background-image: url(/images/pattern-mobile.png);
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card .poko-card-benefits {
+    padding: 32px 0 40px;
+  }
+}
+.poko-card .poko-card-benefits .title {
+  color: #282829;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.48px;
+}
+@media screen and (max-width: 820px) {
+  .poko-card .poko-card-benefits .title {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card .poko-card-benefits .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.poko-card .poko-card-benefits .poko-card-benefits__section {
+  position: relative;
+  z-index: 1;
+}
+.poko-card
+  .poko-card-benefits
+  .poko-card-benefits__section
+  ~ .poko-card-benefits__section {
+  margin-top: 40px;
+}
+@media screen and (max-width: 820px) {
+  .poko-card .poko-card-benefits .poko-card-benefits__section {
+    padding: 0 20px;
+  }
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    ~ .poko-card-benefits__section {
+    margin-top: 80px;
+  }
+}
+.poko-card
+  .poko-card-benefits
+  .poko-card-benefits__section
+  .section-active
+  .inner {
+  border-radius: 16px;
+  border: 1px solid hsla(0, 0%, 100%, 0.08);
+  background: rgba(238, 182, 98, 0.08);
+  box-shadow: inset 0 2px 0 0 hsla(0, 0%, 100%, 0.11);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.poko-card
+  .poko-card-benefits
+  .poko-card-benefits__section
+  .section-active
+  .inner
+  .watermark-number {
+  color: #f47e23 !important;
+  opacity: 0.5;
+}
+.poko-card .poko-card-benefits .poko-card-benefits__section .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.poko-card .poko-card-benefits .poko-card-benefits__section .inner.offramp {
+  padding: 103px 79.304px 102.244px 56px;
+  gap: 76.28px;
+}
+@media screen and (max-width: 640px) {
+  .poko-card .poko-card-benefits .poko-card-benefits__section .inner.offramp {
+    gap: 61px;
+  }
+}
+.poko-card .poko-card-benefits .poko-card-benefits__section .inner.stablecoin {
+  padding: 139px 56px 106px 57px;
+  gap: 85px;
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner.stablecoin {
+    gap: 40px;
+  }
+}
+.poko-card .poko-card-benefits .poko-card-benefits__section .inner.setup {
+  padding: 72px 0 81px 56px;
+}
+@media screen and (max-width: 820px) {
+  .poko-card .poko-card-benefits .poko-card-benefits__section .inner.setup {
+    padding: 72px 56px 81px;
+  }
+}
+.poko-card .poko-card-benefits .poko-card-benefits__section .inner.balance {
+  padding: 91px 56px 90px 76px;
+  gap: 132px;
+}
+@media screen and (max-width: 640px) {
+  .poko-card .poko-card-benefits .poko-card-benefits__section .inner.balance {
+    gap: 26px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .poko-card .poko-card-benefits .poko-card-benefits__section .inner {
+    padding: 48px 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card .poko-card-benefits .poko-card-benefits__section .inner {
+    padding: 17px 7px 22px !important;
+  }
+}
+.poko-card
+  .poko-card-benefits
+  .poko-card-benefits__section
+  .inner
+  .poko-card-benefits__section__info {
+  position: relative;
+  padding: 76px 29px 71px 69px;
+  z-index: 1;
+  order: 1;
+}
+@media screen and (max-width: 820px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner
+    .poko-card-benefits__section__info {
+    padding: 66px 29px 0 54px;
+    order: 2;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner
+    .poko-card-benefits__section__info {
+    padding: 42px 0 5px 38px;
+  }
+}
+.poko-card
+  .poko-card-benefits
+  .poko-card-benefits__section
+  .inner
+  .poko-card-benefits__section__info.reverse {
+  margin-left: 80px;
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner
+    .poko-card-benefits__section__info.reverse {
+    margin-left: 0;
+  }
+}
+.poko-card
+  .poko-card-benefits
+  .poko-card-benefits__section
+  .inner
+  .poko-card-benefits__section__info
+  .watermark-number {
+  position: absolute;
+  font-size: 180px;
+  color: #eee;
+  font-style: italic;
+  line-height: normal;
+  top: -70px;
+  left: -5px;
+  z-index: -1;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+@media screen and (max-width: 820px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner
+    .poko-card-benefits__section__info
+    .watermark-number {
+    font-size: 140px;
+    top: -48px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner
+    .poko-card-benefits__section__info
+    .watermark-number {
+    font-size: 96px;
+    top: -32px;
+  }
+}
+.poko-card
+  .poko-card-benefits
+  .poko-card-benefits__section
+  .inner
+  .poko-card-benefits__section__info
+  .title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.48px;
+  text-align: left;
+}
+@media screen and (max-width: 820px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner
+    .poko-card-benefits__section__info
+    .title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner
+    .poko-card-benefits__section__info
+    .title {
+    font-size: 30px;
+    letter-spacing: normal;
+    line-height: 40px;
+  }
+}
+.poko-card
+  .poko-card-benefits
+  .poko-card-benefits__section
+  .inner
+  .poko-card-benefits__section__info
+  .desc {
+  font-size: 24px;
+  line-height: 32px;
+}
+@media screen and (max-width: 820px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner
+    .poko-card-benefits__section__info
+    .desc {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner
+    .poko-card-benefits__section__info
+    .desc {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.16px;
+  }
+}
+.poko-card
+  .poko-card-benefits
+  .poko-card-benefits__section
+  .inner
+  .poko-card-benefits__section__info
+  .note {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+@media screen and (max-width: 640px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner
+    .poko-card-benefits__section__info
+    .note {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+.poko-card
+  .poko-card-benefits
+  .poko-card-benefits__section
+  .inner
+  .poko-features__section__img {
+  order: 2;
+}
+@media screen and (max-width: 820px) {
+  .poko-card
+    .poko-card-benefits
+    .poko-card-benefits__section
+    .inner
+    .poko-features__section__img {
+    order: 1;
+  }
+}
+.poko-card .poko-card-benefits .poko-card-benefits__section .pattern {
+  position: absolute;
+  top: -70%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+@media screen and (max-width: 820px) {
+  .poko-card .poko-card-benefits .poko-card-benefits__section .pattern {
+    display: none;
+  }
+}
+.poko-card .poko-card-ways {
+  padding: 49px 20px 65px;
+  background-image: url(/images/bg-web3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@media screen and (max-width: 640px) {
+  .poko-card .poko-card-ways {
+    padding: 53px 28px 44px;
+  }
+}
+.poko-card .poko-card-ways .title {
+  color: #e06f37;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.48px;
+  margin-bottom: 47px;
+}
+@media screen and (max-width: 820px) {
+  .poko-card .poko-card-ways .title {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .poko-card .poko-card-ways .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.poko-card .poko-card-ways .inner {
+  border-radius: 16px;
+  border: 1px solid hsla(0, 0%, 100%, 0.08);
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0.08),
+    hsla(0, 0%, 100%, 0)
+  );
+  box-shadow: inset 0 2px 0 0 hsla(0, 0%, 100%, 0.11);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  text-align: center;
+}
+.poko-card .poko-card-ways .inner .inner__title {
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  color: #fff;
+}
+.poko-card .poko-card-ways .inner .inner__desc {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.16px;
+  color: #fff;
+}
+@media screen and (max-width: 640px) {
+  .poko-card .poko-card-ways .inner {
+    padding: 30px 10px;
+  }
+}
+.poko-card .poko-card-ways .spend-stablecoin {
+  border-radius: 16px;
+  border: 2px solid hsla(0, 0%, 100%, 0.08);
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0.08),
+    hsla(0, 0%, 100%, 0)
+  );
+  box-shadow: inset 0 2px 0 0 hsla(0, 0%, 100%, 0.11);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: 41px 115px 52px;
+}
+@media screen and (max-width: 820px) {
+  .poko-card .poko-card-ways .spend-stablecoin {
+    padding: 41px 20px 52px;
+  }
+}
+.poko-card .poko-card-ways .spend-stablecoin .spend-stablecoin__title {
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+@media screen and (max-width: 640px) {
+  .poko-card .poko-card-ways .spend-stablecoin .spend-stablecoin__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.poko-card .poko-card-ways .spend-stablecoin .spend-stablecoin__title.yellow {
+  color: #ffbc48;
+}
+.poko-card .poko-card-ways .spend-stablecoin .spend-stablecoin__title.orange {
+  color: #e06f37;
+}

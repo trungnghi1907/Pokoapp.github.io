@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8">
+    <link rel="preload" as="font" href="_next/static/media/376dd8dc38524313-s.p.woff2" crossorigin="" type="font/woff2">
+    <link rel="preload" as="font" href="_next/static/media/7777133e901cd5ed-s.p.woff2" crossorigin="" type="font/woff2">
+    <link rel="preload" as="font" href="_next/static/media/916d3686010a8de2-s.p.woff2" crossorigin="" type="font/woff2">
+    <link rel="preload" as="font" href="_next/static/media/9a881e2ac07d406b-s.p.woff2" crossorigin="" type="font/woff2">
+    <link rel="preload" as="font" href="_next/static/media/d869208648ca5469-s.p.woff2" crossorigin="" type="font/woff2">
+    <link rel="preload" as="font" href="_next/static/media/e6a3565d0ba99ea5-s.p.woff2" crossorigin="" type="font/woff2">
+    <link rel="stylesheet" href="_next/static/css/6998fa28e7f9e7c4.css" data-precedence="next">
+    <link rel="stylesheet" href="_next/static/css/9d9423dda99788e5.css" data-precedence="next">
+    <title>Poko: Seamless Fiat Payments for Web3</title>
+    <meta name="description"
+        content="Enable local payments and successful onramping for wallets, NFT marketplaces, web3 games, and dApps globally.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="any">
+    <link rel="apple-touch-icon" href="apple-icon.png?abbdac36ac372596" type="image/png" sizes="256x256">
+    <meta name="next-size-adjust">
+    <script src="_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" noModule=""></script>
+</head>
+
+<body class="__className_49fe58">
+    <header>
+        <div class="inner ">
+            <div class="container mx-auto mx-poko-auto">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center"><a href=""><img alt="logo" loading="lazy" width="130" height="55"
+                                decoding="async" data-nimg="1" class="hidden sm:block" style="color:transparent"
+                                src="images/logo/logo.svg"></a><a href=""><img alt="logo" loading="lazy" width="87"
+                                height="37" decoding="async" data-nimg="1" class="block sm:hidden"
+                                style="color:transparent" src="images/logo/logo-mobile.svg"></a>
+                        <ul class="ml-5 flex items-center menu">
+                            <li class="menu-item "><a href="">Home</a></li>
+                            <li class="menu-item "><span class="ant-dropdown-trigger flex items-center">Product<svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none"
+                                        viewBox="0 0 20 20" class="ml-2.5">
+                                        <path fill="#DBDBDB"
+                                            d="M10 13.206a.803.803 0 0 0 .584-.264l4.771-4.884a.715.715 0 0 0 .213-.521.74.74 0 0 0-.74-.747c-.201 0-.396.082-.54.226l-4.282 4.4-4.294-4.4a.781.781 0 0 0-.54-.226.74.74 0 0 0-.74.747c0 .207.075.383.213.521l4.777 4.884c.17.176.358.264.578.264Z">
+                                        </path>
+                                    </svg></span></li>
+                            <li class="menu-item "><a href="post">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:block"><a href="https://dashboard.onramp.pokoapp.xyz/#"><button type="button"
+                                class="ant-btn ant-btn-default btn-primary"><span>Dashboard login </span><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none"
+                                    viewBox="0 0 20 20" class="ml-1.5 w-5 h-5">
+                                    <g clip-path="url(#arrow-right-circle_svg__a)">
+                                        <path fill="#fff"
+                                            d="M10 20c5.484 0 10.01-4.526 10.01-10S15.474 0 9.99 0C4.516 0 0 4.526 0 10s4.526 10 10 10Zm5.193-10.01c0 .29-.106.513-.338.735l-3.414 3.356a.854.854 0 0 1-.619.252c-.474 0-.812-.358-.812-.842 0-.242.096-.464.26-.619l1.22-1.16 1.121-.9-2.06.097H5.667c-.522 0-.89-.387-.89-.909 0-.532.378-.919.89-.919h4.884l2.06.097-1.131-.9-1.21-1.16a.886.886 0 0 1-.26-.619c0-.484.338-.832.812-.832.252 0 .445.068.619.242l3.414 3.366c.242.222.338.445.338.715Z">
+                                        </path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="arrow-right-circle_svg__a">
+                                            <path fill="#fff" d="M0 0h20v20H0z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg></button></a></div>
+                    <div class="block lg:hidden"><button type="button" class="ant-btn ant-btn-default burger"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none"
+                                viewBox="0 0 19 13">
+                                <rect width="19" height="3" fill="#fff" rx="1.5"></rect>
+                                <rect width="19" height="3" y="5" fill="#fff" rx="1.5"></rect>
+                                <rect width="19" height="3" y="10" fill="#fff" rx="1.5"></rect>
+                            </svg></button></div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-mobile-wrapper ">
+            <ul class="menu-mobile">
+                <li class="menu-item menu-item--border mb-6 "><a href="">Home</a></li>
+                <li class="menu-item "><a href="">Product</a></li>
+                <li class="menu-item "><a href="onramp-aggregator">Onramp Aggregator</a><svg
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 20 20">
+                        <path fill="#DBDBDB"
+                            d="M13.206 10a.803.803 0 0 0-.264-.584L8.058 4.645a.715.715 0 0 0-.521-.214.74.74 0 0 0-.747.741c0 .201.081.396.226.54l4.4 4.282-4.4 4.294a.781.781 0 0 0-.226.54c0 .414.333.74.747.74a.715.715 0 0 0 .52-.213l4.885-4.777a.776.776 0 0 0 .264-.578Z">
+                        </path>
+                    </svg></li>
+                <li class="menu-item menu-item--border mb-6 "><a href="direct-checkout">Direct Checkout</a><svg
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 20 20">
+                        <path fill="#DBDBDB"
+                            d="M13.206 10a.803.803 0 0 0-.264-.584L8.058 4.645a.715.715 0 0 0-.521-.214.74.74 0 0 0-.747.741c0 .201.081.396.226.54l4.4 4.282-4.4 4.294a.781.781 0 0 0-.226.54c0 .414.333.74.747.74a.715.715 0 0 0 .52-.213l4.885-4.777a.776.776 0 0 0 .264-.578Z">
+                        </path>
+                    </svg></li>
+                <li class="menu-item mb-6 "><a href="post">Blog</a></li>
+                <li class="menu-item "><a href="team">Team</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="poko-direct-checkout">
+        <div class="poko-direct-checkout-introduce">
+            <div class="container mx-auto mx-poko-auto">
+                <div class="poko-direct-checkout-introduce__inner">
+                    <div class="poko-direct-checkout-introduce__left">
+                        <h1 class="title mb-4 sm:mb-6">Direct<br />Checkout</h1>
+                        <div class="purchasing mb-4 sm:mb-6">
+                            <p>Purchasing web3<br /> assets made easy</p>
+                        </div>
+                        <p class="desc mb-8 sm:mb-6">Poko’s Direct Checkout enables one-step purchasing flow from any
+                            smart contract. Let users buy NFTs or in-game items and stake in DeFi using local payment
+                            methods without having to onramp to crypto themselves.</p>
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-y-6 gap-x-2.5"><a target="_blank"
+                                href="https://flatfbx5wzx.typeform.com/to/MjnlYD26"><button type="button"
+                                    class="ant-btn ant-btn-default btn-primary"><span>Join our
+                                        waitlist</span></button></a><a class="inline-flex items-center docs-link"
+                                href="https://docs.pokoapp.xyz/direct-checkout/what-is-direct-checkout"
+                                target="_blank"><span>Read documentation</span><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="1em" height="1em" fill="none" viewBox="0 0 24 24" class="w-6 h-6 ml-1.5">
+                                    <g fill="#E06F37" clip-path="url(#arrow-right-orange-outline_svg__a)">
+                                        <path
+                                            d="M11.994 24C18.571 24 24 18.569 24 12S18.56 0 11.983 0C5.417 0 0 5.431 0 12s5.429 12 11.994 12Zm0-2.39c-5.324 0-9.581-4.283-9.581-9.61 0-5.327 4.257-9.598 9.57-9.598A9.589 9.589 0 0 1 21.599 12a9.574 9.574 0 0 1-9.605 9.61Z">
+                                        </path>
+                                        <path
+                                            d="M17.597 11.176c.267.255.383.51.383.824 0 .325-.128.58-.383.836l-3.944 3.876a.954.954 0 0 1-.696.29c-.545 0-.94-.418-.94-.963 0-.29.105-.534.302-.708l1.415-1.346 1.3-1.045-2.379.104h-5.66c-.592 0-1.01-.452-1.01-1.044 0-.604.418-1.044 1.01-1.044h5.66l2.367.116-1.3-1.057L12.32 8.67a.997.997 0 0 1-.302-.708c0-.545.395-.951.94-.951.278 0 .51.092.696.278l3.944 3.888Z">
+                                        </path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="arrow-right-orange-outline_svg__a">
+                                            <path fill="#fff" d="M0 0h24v24H0z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg></a></div>
+                    </div>
+                    <div class="poko-direct-checkout-introduce__right">
+                        <div class="image-wrapper"><img alt="checkout" loading="lazy" width="336" height="484"
+                                decoding="async" data-nimg="1" class="mx-auto lg:mx-0 hidden sm:block"
+                                style="color:transparent"
+                                srcSet="_next/image?url=%2Fimages%2Fipad-checkout.gif&amp;w=384&amp;q=100 1x, /_next/image?url=%2Fimages%2Fipad-checkout.gif&amp;w=750&amp;q=100 2x"
+                                src="_next/image?url=%2Fimages%2Fipad-checkout.gif&amp;w=750&amp;q=100"><img
+                                alt="checkout" loading="lazy" width="210" height="290" decoding="async" data-nimg="1"
+                                class="mx-auto block sm:hidden" style="color:transparent"
+                                srcSet="_next/image?url=%2Fimages%2Fipad-checkout.gif&amp;w=256&amp;q=100 1x, /_next/image?url=%2Fimages%2Fipad-checkout.gif&amp;w=640&amp;q=100 2x"
+                                src="_next/image?url=%2Fimages%2Fipad-checkout.gif&amp;w=640&amp;q=100"></div>
+                    </div><img alt="section" loading="lazy" width="698" height="740" decoding="async" data-nimg="1"
+                        class="bg-section hidden sm:block" style="color:transparent"
+                        srcSet="_next/image?url=%2Fimages%2Fbg-section.png&amp;w=750&amp;q=100 1x, /_next/image?url=%2Fimages%2Fbg-section.png&amp;w=1920&amp;q=100 2x"
+                        src="_next/image?url=%2Fimages%2Fbg-section.png&amp;w=1920&amp;q=100"><img alt="section"
+                        loading="lazy" width="304" height="322" decoding="async" data-nimg="1"
+                        class="bg-section block sm:hidden" style="color:transparent"
+                        srcSet="_next/image?url=%2Fimages%2Fbg-section-checkout-mobile.png&amp;w=384&amp;q=100 1x, /_next/image?url=%2Fimages%2Fbg-section-checkout-mobile.png&amp;w=640&amp;q=100 2x"
+                        src="_next/image?url=%2Fimages%2Fbg-section-checkout-mobile.png&amp;w=640&amp;q=100">
+                </div>
+            </div>
+            <div class="poko-direct-checkout-transaction">
+                <div class="container mx-auto">
+                    <h1 class="title">Transaction failure rates<br class="hidden sm:block"> for onramping is high</h1>
+                    <div class="transaction-wrapper"><img alt="chart" loading="lazy" width="935" height="299"
+                            decoding="async" data-nimg="1" class="mx-auto hidden lg:block" style="color:transparent"
+                            srcSet="_next/image?url=%2Fimages%2Fdirect-transaction.png&amp;w=1080&amp;q=100 1x, /_next/image?url=%2Fimages%2Fdirect-transaction.png&amp;w=1920&amp;q=100 2x"
+                            src="_next/image?url=%2Fimages%2Fdirect-transaction.png&amp;w=1920&amp;q=100"><img
+                            alt="chart" loading="lazy" width="314" height="715" decoding="async" data-nimg="1"
+                            class="mx-auto block lg:hidden" style="color:transparent"
+                            srcSet="_next/image?url=%2Fimages%2Fdirect-transaction-mobile.png&amp;w=384&amp;q=100 1x, /_next/image?url=%2Fimages%2Fdirect-transaction-mobile.png&amp;w=640&amp;q=100 2x"
+                            src="_next/image?url=%2Fimages%2Fdirect-transaction-mobile.png&amp;w=640&amp;q=100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="poko-direct-checkout-seamless">
+            <div class="container mx-auto">
+                <div class="seamless-head">
+                    <h1 class="title mb-3">Seamless checkout for 42%<br class="hidden lg:block"> more purchases</h1>
+                    <h2 class="subtitle mb-9 sm:mb-6">Get in touch with our team to learn how Poko can<br
+                            class="hidden lg:block"> bring frictionless payments to your product.</h2>
+                    <div class="seamless-flow"><img class="hidden lg:block" src="images/seamless-flow.png" width="533"
+                            height="94" quality="100" alt="seamless-flow"><img class="block lg:hidden"
+                            src="images/seamless-flow-mobile.png" width="314" height="241" quality="100"
+                            alt="seamless-flow"></div>
+                </div>
+                <div class="web3-buying">
+                    <h1 class="title">Web3 buying and staking with<br class="hidden lg:block"><span class="highlight">
+                            one step</span></h1>
+                    <div class="web3-buying__section">
+                        <div class="order-2 lg:order-1">
+                            <div>
+                                <div style="opacity:0;transform:translateX(-50%)">
+                                    <div class="web3-buying-info">
+                                        <p class="watermark-number">01</p>
+                                        <h1 class="web3-buying-info__title mb-2 sm:mb-4 max-w-[471px]">No KYC. No
+                                            minimum purchase.</h1>
+                                        <p class="web3-buying-info__desc max-w-[471px]">Users can buy and stake in web3
+                                            with as low as US$0, without having to do KYC (up to US$2,000).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-1 lg:order-2">
+                            <div>
+                                <div style="opacity:0;transform:translateX(50%)">
+                                    <div class="web3-buying-img"><img alt="kyc" loading="lazy" width="542" height="325"
+                                            decoding="async" data-nimg="1" class="mx-auto lg:mx-0 hidden sm:block"
+                                            style="color:transparent"
+                                            srcSet="_next/image?url=%2Fimages%2Fkyc.png&amp;w=640&amp;q=100 1x, /_next/image?url=%2Fimages%2Fkyc.png&amp;w=1200&amp;q=100 2x"
+                                            src="_next/image?url=%2Fimages%2Fkyc.png&amp;w=1200&amp;q=100"><img
+                                            alt="kyc" loading="lazy" width="271" height="162" decoding="async"
+                                            data-nimg="1" class="mx-auto block sm:hidden" style="color:transparent"
+                                            srcSet="_next/image?url=%2Fimages%2Fkyc-mobile.png&amp;w=384&amp;q=100 1x, /_next/image?url=%2Fimages%2Fkyc-mobile.png&amp;w=640&amp;q=100 2x"
+                                            src="_next/image?url=%2Fimages%2Fkyc-mobile.png&amp;w=640&amp;q=100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="web3-buying__section padding-payment">
+                        <div>
+                            <div style="opacity:0;transform:translateX(-50%)">
+                                <div class="web3-buying-img"><img alt="payment-methods-checkout" loading="lazy"
+                                        width="550" height="560" decoding="async" data-nimg="1"
+                                        class="mx-auto lg:mx-0 hidden sm:block" style="color:transparent"
+                                        srcSet="_next/image?url=%2Fimages%2Fpayment-methods-checkout.png&amp;w=640&amp;q=100 1x, /_next/image?url=%2Fimages%2Fpayment-methods-checkout.png&amp;w=1200&amp;q=100 2x"
+                                        src="_next/image?url=%2Fimages%2Fpayment-methods-checkout.png&amp;w=1200&amp;q=100"><img
+                                        alt="payment-methods-checkout" loading="lazy" width="275" height="280"
+                                        decoding="async" data-nimg="1" class="mx-auto block sm:hidden"
+                                        style="color:transparent"
+                                        srcSet="_next/image?url=%2Fimages%2Fpayment-methods-checkout.png&amp;w=384&amp;q=100 1x, /_next/image?url=%2Fimages%2Fpayment-methods-checkout.png&amp;w=640&amp;q=100 2x"
+                                        src="_next/image?url=%2Fimages%2Fpayment-methods-checkout.png&amp;w=640&amp;q=100">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="opacity:0;transform:translateX(50%)">
+                                <div class="web3-buying-info">
+                                    <div class="watermark-number">02</div>
+                                    <h2 class="web3-buying-info__title mb-2 sm:mb-4 max-w-[471px]">100+ payment methods
+                                    </h2>
+                                    <p class="web3-buying-info__desc max-w-[471px]">Enable user to make payments for
+                                        NFTs, in-game items, and staking directly using any local payment methods they
+                                        want.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="web3-buying__section padding-process">
+                        <div class="order-2 lg:order-1">
+                            <div>
+                                <div style="opacity:0;transform:translateX(-50%)">
+                                    <div class="web3-buying-info">
+                                        <p class="watermark-number">03</p>
+                                        <h1 class="web3-buying-info__title mb-2 sm:mb-4 max-w-[471px]">Payment
+                                            processing as low as 1%</h1>
+                                        <p class="web3-buying-info__desc max-w-[471px]">Let users save up to 10x
+                                            compared to the compounded fees from onramping, swapping, then buying NFT or
+                                            staking.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-1 lg:order-2">
+                            <div>
+                                <div style="opacity:0;transform:translateX(50%)">
+                                    <div class="web3-buying-img"><img alt="payment-process" loading="lazy" width="594"
+                                            height="308" decoding="async" data-nimg="1"
+                                            class="mx-auto lg:mx-0 hidden sm:block" style="color:transparent"
+                                            srcSet="_next/image?url=%2Fimages%2Fpayment-process.png&amp;w=640&amp;q=100 1x, /_next/image?url=%2Fimages%2Fpayment-process.png&amp;w=1200&amp;q=100 2x"
+                                            src="_next/image?url=%2Fimages%2Fpayment-process.png&amp;w=1200&amp;q=100"><img
+                                            alt="payment-process" loading="lazy" width="297" height="154"
+                                            decoding="async" data-nimg="1" class="mx-auto block sm:hidden"
+                                            style="color:transparent"
+                                            srcSet="_next/image?url=%2Fimages%2Fpayment-process.png&amp;w=384&amp;q=100 1x, /_next/image?url=%2Fimages%2Fpayment-process.png&amp;w=640&amp;q=100 2x"
+                                            src="_next/image?url=%2Fimages%2Fpayment-process.png&amp;w=640&amp;q=100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="web3-buying__section padding-versatile">
+                        <div>
+                            <div style="opacity:0;transform:translateX(-50%)">
+                                <div class="web3-buying-img"><img alt="versatile" loading="lazy" width="599"
+                                        height="488" decoding="async" data-nimg="1"
+                                        class="mx-auto lg:mx-0 hidden sm:block" style="color:transparent"
+                                        srcSet="_next/image?url=%2Fimages%2Fversatile.png&amp;w=640&amp;q=100 1x, /_next/image?url=%2Fimages%2Fversatile.png&amp;w=1200&amp;q=100 2x"
+                                        src="_next/image?url=%2Fimages%2Fversatile.png&amp;w=1200&amp;q=100"><img
+                                        alt="versatile" loading="lazy" width="300" height="244" decoding="async"
+                                        data-nimg="1" class="mx-auto block sm:hidden" style="color:transparent"
+                                        srcSet="_next/image?url=%2Fimages%2Fversatile.png&amp;w=384&amp;q=100 1x, /_next/image?url=%2Fimages%2Fversatile.png&amp;w=640&amp;q=100 2x"
+                                        src="_next/image?url=%2Fimages%2Fversatile.png&amp;w=640&amp;q=100"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="opacity:0;transform:translateX(50%)">
+                                <div class="web3-buying-info">
+                                    <div class="watermark-number">04</div>
+                                    <h2 class="web3-buying-info__title mb-2 sm:mb-4 max-w-[471px]">Versatile deployment
+                                    </h2>
+                                    <p class="web3-buying-info__desc max-w-[471px]">Selling web3 items expressed in web2
+                                        formats? Direct Checkout automates the backend process so users could receive
+                                        their game item instantly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="poko-direct-checkout-web3">
+            <div class="use-case container mx-auto">
+                <h1 class="title mx-auto">Web3 use cases</h1>
+                <div class="use-case__box">
+                    <div class="use-case__card">
+                        <h1 class="card-order"
+                            style="font-family:&#x27;__Inconsolata_a1c91c&#x27;, &#x27;__Inconsolata_Fallback_a1c91c&#x27;">
+                            01</h1>
+                        <div class="card-body">
+                            <h2 class="card-title mb-2">NFT marketplaces</h2>
+                            <p class="card-desc">Enable buyers to pay in fiat and receive NFTs, without having to buy
+                                crypto themselves.</p>
+                        </div>
+                    </div>
+                    <div class="use-case__card">
+                        <h1 class="card-order"
+                            style="font-family:&#x27;__Inconsolata_a1c91c&#x27;, &#x27;__Inconsolata_Fallback_a1c91c&#x27;">
+                            02</h1>
+                        <div class="card-body">
+                            <h2 class="card-title mb-2">DeFi protocols</h2>
+                            <p class="card-desc">Allow users with no crypto on hand to stake directly with local
+                                payments.</p>
+                        </div>
+                    </div>
+                    <div class="use-case__card">
+                        <h1 class="card-order"
+                            style="font-family:&#x27;__Inconsolata_a1c91c&#x27;, &#x27;__Inconsolata_Fallback_a1c91c&#x27;">
+                            03</h1>
+                        <div class="card-body">
+                            <h2 class="card-title mb-2">Web3 games</h2>
+                            <p class="card-desc">Let users purchase NFTs and in-game items with fiat seamlessly.</p>
+                        </div>
+                    </div>
+                    <div class="use-case__card">
+                        <h1 class="card-order"
+                            style="font-family:&#x27;__Inconsolata_a1c91c&#x27;, &#x27;__Inconsolata_Fallback_a1c91c&#x27;">
+                            04</h1>
+                        <div class="card-body">
+                            <h2 class="card-title mb-2">Embedded wallets</h2>
+                            <p class="card-desc">Enable wallet users to purchase NFTs directly with local payments and
+                                earn transaction fees.</p>
+                        </div>
+                    </div>
+                </div><img alt="ellipse" loading="lazy" width="117" height="117" decoding="async" data-nimg="1"
+                    class="ellipse-1" style="color:transparent" src="images/ellipse.svg"><img alt="ellipse"
+                    loading="lazy" width="59" height="59" decoding="async" data-nimg="1" class="ellipse-2"
+                    style="color:transparent" src="images/ellipse.svg">
+            </div>
+            <div class="container mx-auto">
+                <div class="inner">
+                    <h1 class="title">Make buying and staking<br /> simple in web3</h1><a target="_blank"
+                        href="https://flatfbx5wzx.typeform.com/to/MjnlYD26"><button type="button"
+                            class="ant-btn ant-btn-default btn-primary"><span>Join our waitlist</span></button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container mx-auto">
+            <div class="footer__upper flex justify-between flex-wrap">
+                <div class="company-info"><img alt="logo-footer" loading="lazy" width="170" height="73" decoding="async"
+                        data-nimg="1" style="color:transparent" src="images/logo/logo-footer.svg">
+                    <p class="desc mt-1 mb-3">Seamless fiat<br /> payments for web3</p>
+                    <p class="registered mb-1">Registered in the Republic of Singapore under <br />Shoppalive Private
+                        Limited (UEN: 201729196G)</p>
+                    <p class="registered">22 Sin Ming Lane #06-76 Midview City Singapore 573969</p>
+                    <ul class="flex gap-x-3 mt-2.5">
+                        <li class="contact-item"><a target="_blank" href="https://twitter.com/poko_app"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <rect width="24" height="24" fill="#000" rx="12"></rect>
+                                    <g clip-path="url(#twitter_svg__a)">
+                                        <path fill="#E06F37"
+                                            d="M9.775 16.875c4.527 0 7.004-3.752 7.004-7.004 0-.106-.002-.213-.007-.319.482-.348.898-.78 1.228-1.274-.449.2-.925.33-1.413.386a2.475 2.475 0 0 0 1.082-1.361 4.948 4.948 0 0 1-1.562.597 2.465 2.465 0 0 0-4.197 2.245 6.992 6.992 0 0 1-5.074-2.57 2.465 2.465 0 0 0 .762 3.285 2.465 2.465 0 0 1-1.115-.307v.03a2.461 2.461 0 0 0 1.975 2.414 2.448 2.448 0 0 1-1.11.043 2.467 2.467 0 0 0 2.298 1.71A4.938 4.938 0 0 1 6 15.77a6.984 6.984 0 0 0 3.775 1.105Z">
+                                        </path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="twitter_svg__a">
+                                            <path fill="#fff" d="M6 6h12v12H6z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg></a></li>
+                        <li class="contact-item"><a target="_blank"
+                                href="https://www.linkedin.com/company/pokoapp/"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="1em" height="1em" fill="none" viewBox="0 0 24 24">
+                                    <rect width="24" height="24" fill="#000" rx="12"></rect>
+                                    <g clip-path="url(#linkedin_svg__a)">
+                                        <path fill="#E06F37"
+                                            d="M17.114 6H6.886A.886.886 0 0 0 6 6.886v10.228a.886.886 0 0 0 .886.886h10.228a.885.885 0 0 0 .886-.886V6.886A.886.886 0 0 0 17.114 6ZM9.577 16.223H7.773v-5.731h1.804v5.73Zm-.904-6.525a1.036 1.036 0 1 1 1.042-1.036 1.02 1.02 0 0 1-1.042 1.035Zm7.554 6.53h-1.804v-3.131c0-.924-.392-1.209-.899-1.209-.535 0-1.06.404-1.06 1.232v3.107H10.66v-5.731h1.735v.794h.023c.175-.352.785-.955 1.715-.955 1.007 0 2.095.597 2.095 2.347l-.001 3.545Z">
+                                        </path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="linkedin_svg__a">
+                                            <path fill="#fff" d="M6 6h12v12H6z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg></a></li>
+                        <li class="contact-item"><a href="mailto:hello@pokoapp.xyz"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none"
+                                    viewBox="0 0 32 32">
+                                    <rect width="32" height="32" fill="#000" rx="16"></rect>
+                                    <g fill="#E06F37" clip-path="url(#email_svg__a)">
+                                        <path
+                                            d="m23.97 11.695-5.613 5.612a3.338 3.338 0 0 1-4.714 0L8.03 11.695C8.02 11.8 8 11.895 8 12v8a3.337 3.337 0 0 0 3.333 3.333h9.334A3.337 3.337 0 0 0 24 20v-8c0-.105-.021-.2-.03-.305Z">
+                                        </path>
+                                        <path
+                                            d="m17.415 16.364 6.09-6.09a3.324 3.324 0 0 0-2.838-1.607h-9.334a3.324 3.324 0 0 0-2.837 1.607l6.09 6.09a2.005 2.005 0 0 0 2.829 0Z">
+                                        </path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="email_svg__a">
+                                            <path fill="#fff" d="M8 8h16v16H8z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <div class="menu-section">
+                        <h3 class="title mb-3">Poko</h3>
+                        <ul class="sub-menu">
+                            <li><a href="">Home</a></li>
+                            <li><a href="team">Team</a></li>
+                            <li><a href="post">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-section">
+                        <h3 class="title mb-3">Product</h3>
+                        <ul class="sub-menu">
+                            <li><a href="onramp-aggregator">Onramp Aggregator</a></li>
+                            <li><a href="direct-checkout">Direct Checkout</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-section">
+                        <h3 class="title mb-3">Legal</h3>
+                        <ul class="sub-menu">
+                            <li><a href="terms-of-service">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__lower">
+                <hr />
+                <p class="copyright mt-6">© 2023 Poko</p>
+            </div>
+        </div>
+    </footer>
+    <script src="_next/static/chunks/webpack-e4669ecabaf86264.js" async=""></script>
+    <script src="_next/static/chunks/bce60fc1-629c48d6034b681d.js" async=""></script>
+    <script src="_next/static/chunks/769-d5a27e39def89ee3.js" async=""></script>
+    <script src="_next/static/chunks/main-app-e6458dc727967c63.js" async=""></script>
+    <script>(self.__next_f = self.__next_f || []).push([0])</script>
+    <script>self.__next_f.push([1, "1:HL[\"_next/static/media/376dd8dc38524313-s.p.woff2\",{\"as\":\"font\",\"type\":\"font/woff2\"}]\n2:HL[\"_next/static/media/7777133e901cd5ed-s.p.woff2\",{\"as\":\"font\",\"type\":\"font/woff2\"}]\n3:HL[\"_next/static/media/916d3686010a8de2-s.p.woff2\",{\"as\":\"font\",\"type\":\"font/woff2\"}]\n4:HL[\"_next/static/media/9a881e2ac07d406b-s.p.woff2\",{\"as\":\"font\",\"type\":\"font/woff2\"}]\n5:HL[\"_next/static/media/d869208648ca5469-s.p.woff2\",{\"as\":\"font\",\"type\":\"font/woff2\"}]\n6:HL[\"_next/static/css/6998fa28e7f9e7c4.css\",{\"as\":\"style\"}]\n0:\"$L"])</script>
+    <script>self.__next_f.push([1, "7\"\n"])</script>
+    <script>self.__next_f.push([1, "8:HL[\"_next/static/media/e6a3565d0ba99ea5-s.p.woff2\",{\"as\":\"font\",\"type\":\"font/woff2\"}]\n9:HL[\"_next/static/css/9d9423dda99788e5.css\",{\"as\":\"style\"}]\n"])</script>
+    <script>self.__next_f.push([1, "a:I{\"id\":\"68802\",\"chunks\":[\"272:static/chunks/webpack-e4669ecabaf86264.js\",\"253:static/chunks/bce60fc1-629c48d6034b681d.js\",\"769:static/chunks/769-d5a27e39def89ee3.js\"],\"name\":\"\",\"async\":false}\nc:I{\"id\":\"14299\",\"chunks\":[\"272:static/chunks/webpack-e4669ecabaf86264.js\",\"253:static/chunks/bce60fc1-629c48d6034b681d.js\",\"769:static/chunks/769-d5a27e39def89ee3.js\"],\"name\":\"\",\"async\":false}\nd:I{\"id\":\"13964\",\"chunks\":[\"962:static/chunks/962-8a1af9d332838414.js\",\"354:static/chunks/354-da1997ae34b77999.js\",\"757:stat"])</script>
+    <script>self.__next_f.push([1, "ic/chunks/757-6afa3e8a416167e9.js\",\"913:static/chunks/913-737fc9bfab33e087.js\",\"949:static/chunks/949-dd3ff34ea18c43a6.js\",\"102:static/chunks/102-dad9777d5c947949.js\",\"842:static/chunks/app/onramp-aggregator/page-205b125aa2a5e83d.js\"],\"name\":\"ConfigProvider\",\"async\":false}\ne:I{\"id\":\"94176\",\"chunks\":[\"962:static/chunks/962-8a1af9d332838414.js\",\"354:static/chunks/354-da1997ae34b77999.js\",\"757:static/chunks/757-6afa3e8a416167e9.js\",\"477:static/chunks/477-4d9fcb5f3e06827e.js\",\"913:static/chunks/913-737fc9bfab33"])</script>
+    <script>self.__next_f.push([1, "e087.js\",\"949:static/chunks/949-dd3ff34ea18c43a6.js\",\"185:static/chunks/app/layout-2e821b9d10d08ffd.js\"],\"name\":\"\",\"async\":false}\n10:I{\"id\":\"85962\",\"chunks\":[\"550:static/chunks/925f3d25-1af7259455ef26bd.js\",\"962:static/chunks/962-8a1af9d332838414.js\",\"354:static/chunks/354-da1997ae34b77999.js\",\"757:static/chunks/757-6afa3e8a416167e9.js\",\"477:static/chunks/477-4d9fcb5f3e06827e.js\",\"913:static/chunks/913-737fc9bfab33e087.js\",\"380:static/chunks/380-2c660472ab6bc38a.js\",\"605:static/chunks/app/post/[slug]/page-8"])</script>
+    <script>self.__next_f.push([1, "48320e161693bd3.js\"],\"name\":\"\",\"async\":false}\n11:I{\"id\":\"57477\",\"chunks\":[\"550:static/chunks/925f3d25-1af7259455ef26bd.js\",\"962:static/chunks/962-8a1af9d332838414.js\",\"354:static/chunks/354-da1997ae34b77999.js\",\"757:static/chunks/757-6afa3e8a416167e9.js\",\"477:static/chunks/477-4d9fcb5f3e06827e.js\",\"913:static/chunks/913-737fc9bfab33e087.js\",\"380:static/chunks/380-2c660472ab6bc38a.js\",\"605:static/chunks/app/post/[slug]/page-848320e161693bd3.js\"],\"name\":\"\",\"async\":false}\n12:I{\"id\":\"13211\",\"chunks\":[\"272:stati"])</script>
+    <script>self.__next_f.push([1, "c/chunks/webpack-e4669ecabaf86264.js\",\"253:static/chunks/bce60fc1-629c48d6034b681d.js\",\"769:static/chunks/769-d5a27e39def89ee3.js\"],\"name\":\"\",\"async\":false}\n13:I{\"id\":\"5767\",\"chunks\":[\"272:static/chunks/webpack-e4669ecabaf86264.js\",\"253:static/chunks/bce60fc1-629c48d6034b681d.js\",\"769:static/chunks/769-d5a27e39def89ee3.js\"],\"name\":\"\",\"async\":false}\n14:I{\"id\":\"13964\",\"chunks\":[\"962:static/chunks/962-8a1af9d332838414.js\",\"354:static/chunks/354-da1997ae34b77999.js\",\"757:static/chunks/757-6afa3e8a416167e9.js\",\""])</script>
+    <script>self.__next_f.push([1, "913:static/chunks/913-737fc9bfab33e087.js\",\"949:static/chunks/949-dd3ff34ea18c43a6.js\",\"102:static/chunks/102-dad9777d5c947949.js\",\"842:static/chunks/app/onramp-aggregator/page-205b125aa2a5e83d.js\"],\"name\":\"Button\",\"async\":false}\n15:I{\"id\":\"87380\",\"chunks\":[\"962:static/chunks/962-8a1af9d332838414.js\",\"354:static/chunks/354-da1997ae34b77999.js\",\"757:static/chunks/757-6afa3e8a416167e9.js\",\"913:static/chunks/913-737fc9bfab33e087.js\",\"949:static/chunks/949-dd3ff34ea18c43a6.js\",\"102:static/chunks/102-dad9777d5c9"])</script>
+    <script>self.__next_f.push([1, "47949.js\",\"842:static/chunks/app/onramp-aggregator/page-205b125aa2a5e83d.js\"],\"name\":\"AnimateLeftIn\",\"async\":false}\n16:I{\"id\":\"87380\",\"chunks\":[\"962:static/chunks/962-8a1af9d332838414.js\",\"354:static/chunks/354-da1997ae34b77999.js\",\"757:static/chunks/757-6afa3e8a416167e9.js\",\"913:static/chunks/913-737fc9bfab33e087.js\",\"949:static/chunks/949-dd3ff34ea18c43a6.js\",\"102:static/chunks/102-dad9777d5c947949.js\",\"842:static/chunks/app/onramp-aggregator/page-205b125aa2a5e83d.js\"],\"name\":\"AnimateRightIn\",\"async\":fals"])</script>
+    <script>self.__next_f.push([1, "e}\n"])</script>
+    <script>self.__next_f.push([1, "7:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"_next/static/css/6998fa28e7f9e7c4.css\",\"precedence\":\"next\"}]],[\"$\",\"$La\",null,{\"buildId\":\"EdTwJUgv6xD1S-qL89fcm\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"direct-checkout\",\"initialTree\":[\"\",{\"children\":[\"direct-checkout\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[\"$Lb\",[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\"}]],\"globalErrorComponent\":\"$c\",\"notFound\":[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__className_49fe58\",\"children\":[\"$\",\"$Ld\",null,{\"theme\":{\"hashed\":false,\"token\":{\"fontFamily\":\"'__Poppins_49fe58', '__Poppins_Fallback_49fe58'\"}},\"children\":[[\"$\",\"$Le\",null,{}],[\"$Lf\",\"$undefined\",[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]]],[\"$\",\"footer\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto\",\"children\":[[\"$\",\"div\",null,{\"className\":\"footer__upper flex justify-between flex-wrap\",\"children\":[[\"$\",\"div\",null,{\"className\":\"company-info\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"images/logo/logo-footer.svg\",\"alt\":\"logo-footer\",\"width\":170,\"height\":73,\"quality\":100}],[\"$\",\"p\",null,{\"className\":\"desc mt-1 mb-3\",\"children\":[\"Seamless fiat\",[\"$\",\"br\",null,{}],\" payments for web3\"]}],[\"$\",\"p\",null,{\"className\":\"registered mb-1\",\"children\":[\"Registered in the Republic of Singapore under \",[\"$\",\"br\",null,{}],\"Shoppalive Private Limited (UEN: 201729196G)\"]}],[\"$\",\"p\",null,{\"className\":\"registered\",\"children\":\"22 Sin Ming Lane #06-76 Midview City Singapore 573969\"}],[\"$\",\"ul\",null,{\"className\":\"flex gap-x-3 mt-2.5\",\"children\":[[\"$\",\"li\",null,{\"className\":\"contact-item\",\"children\":[\"$\",\"$L11\",null,{\"href\":\"https://twitter.com/poko_app\",\"target\":\"_blank\",\"children\":[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"1em\",\"height\":\"1em\",\"fill\":\"none\",\"viewBox\":\"0 0 24 24\",\"children\":[[\"$\",\"rect\",null,{\"width\":24,\"height\":24,\"fill\":\"#000\",\"rx\":12}],[\"$\",\"g\",null,{\"clipPath\":\"url(#twitter_svg__a)\",\"children\":[\"$\",\"path\",null,{\"fill\":\"#E06F37\",\"d\":\"M9.775 16.875c4.527 0 7.004-3.752 7.004-7.004 0-.106-.002-.213-.007-.319.482-.348.898-.78 1.228-1.274-.449.2-.925.33-1.413.386a2.475 2.475 0 0 0 1.082-1.361 4.948 4.948 0 0 1-1.562.597 2.465 2.465 0 0 0-4.197 2.245 6.992 6.992 0 0 1-5.074-2.57 2.465 2.465 0 0 0 .762 3.285 2.465 2.465 0 0 1-1.115-.307v.03a2.461 2.461 0 0 0 1.975 2.414 2.448 2.448 0 0 1-1.11.043 2.467 2.467 0 0 0 2.298 1.71A4.938 4.938 0 0 1 6 15.77a6.984 6.984 0 0 0 3.775 1.105Z\"}]}],[\"$\",\"defs\",null,{\"children\":[\"$\",\"clipPath\",null,{\"id\":\"twitter_svg__a\",\"children\":[\"$\",\"path\",null,{\"fill\":\"#fff\",\"d\":\"M6 6h12v12H6z\"}]}]}]]}]}]}],[\"$\",\"li\",null,{\"className\":\"contact-item\",\"children\":[\"$\",\"$L11\",null,{\"href\":\"https://www.linkedin.com/company/pokoapp/\",\"target\":\"_blank\",\"children\":[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"1em\",\"height\":\"1em\",\"fill\":\"none\",\"viewBox\":\"0 0 24 24\",\"children\":[[\"$\",\"rect\",null,{\"width\":24,\"height\":24,\"fill\":\"#000\",\"rx\":12}],[\"$\",\"g\",null,{\"clipPath\":\"url(#linkedin_svg__a)\",\"children\":[\"$\",\"path\",null,{\"fill\":\"#E06F37\",\"d\":\"M17.114 6H6.886A.886.886 0 0 0 6 6.886v10.228a.886.886 0 0 0 .886.886h10.228a.885.885 0 0 0 .886-.886V6.886A.886.886 0 0 0 17.114 6ZM9.577 16.223H7.773v-5.731h1.804v5.73Zm-.904-6.525a1.036 1.036 0 1 1 1.042-1.036 1.02 1.02 0 0 1-1.042 1.035Zm7.554 6.53h-1.804v-3.131c0-.924-.392-1.209-.899-1.209-.535 0-1.06.404-1.06 1.232v3.107H10.66v-5.731h1.735v.794h.023c.175-.352.785-.955 1.715-.955 1.007 0 2.095.597 2.095 2.347l-.001 3.545Z\"}]}],[\"$\",\"defs\",null,{\"children\":[\"$\",\"clipPath\",null,{\"id\":\"linkedin_svg__a\",\"children\":[\"$\",\"path\",null,{\"fill\":\"#fff\",\"d\":\"M6 6h12v12H6z\"}]}]}]]}]}]}],[\"$\",\"li\",null,{\"className\":\"contact-item\",\"children\":[\"$\",\"a\",null,{\"href\":\"mailto:hello@pokoapp.xyz\",\"children\":[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"1em\",\"height\":\"1em\",\"fill\":\"none\",\"viewBox\":\"0 0 32 32\",\"children\":[[\"$\",\"rect\",null,{\"width\":32,\"height\":32,\"fill\":\"#000\",\"rx\":16}],[\"$\",\"g\",null,{\"fill\":\"#E06F37\",\"clipPath\":\"url(#email_svg__a)\",\"children\":[[\"$\",\"path\",null,{\"d\":\"m23.97 11.695-5.613 5.612a3.338 3.338 0 0 1-4.714 0L8.03 11.695C8.02 11.8 8 11.895 8 12v8a3.337 3.337 0 0 0 3.333 3.333h9.334A3.337 3.337 0 0 0 24 20v-8c0-.105-.021-.2-.03-.305Z\"}],[\"$\",\"path\",null,{\"d\":\"m17.415 16.364 6.09-6.09a3.324 3.324 0 0 0-2.838-1.607h-9.334a3.324 3.324 0 0 0-2.837 1.607l6.09 6.09a2.005 2.005 0 0 0 2.829 0Z\"}]]}],[\"$\",\"defs\",null,{\"children\":[\"$\",\"clipPath\",null,{\"id\":\"email_svg__a\",\"children\":[\"$\",\"path\",null,{\"fill\":\"#fff\",\"d\":\"M8 8h16v16H8z\"}]}]}]]}]}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"menu\",\"children\":[[\"$\",\"div\",null,{\"className\":\"menu-section\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"title mb-3\",\"children\":\"Poko\"}],[\"$\",\"ul\",null,{\"className\":\"sub-menu\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"\",\"children\":\"Home\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"team\",\"children\":\"Team\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"post\",\"children\":\"Blog\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"menu-section\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"title mb-3\",\"children\":\"Product\"}],[\"$\",\"ul\",null,{\"className\":\"sub-menu\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"onramp-aggregator\",\"children\":\"Onramp Aggregator\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"direct-checkout\",\"children\":\"Direct Checkout\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"menu-section\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"title mb-3\",\"children\":\"Legal\"}],[\"$\",\"ul\",null,{\"className\":\"sub-menu\",\"children\":[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"terms-of-service\",\"children\":\"Terms of Service\"}]}]}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"footer__lower\",\"children\":[[\"$\",\"hr\",null,{}],[\"$\",\"p\",null,{\"className\":\"copyright mt-6\",\"children\":\"© 2023 Poko\"}]]}]]}]}]]}]}]}],\"asNotFound\":false,\"children\":[[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__className_49fe58\",\"children\":[\"$\",\"$Ld\",null,{\"theme\":{\"hashed\":false,\"token\":{\"fontFamily\":\"'__Poppins_49fe58', '__Poppins_Fallback_49fe58'\"}},\"children\":[[\"$\",\"$Le\",null,{}],[\"$\",\"$L12\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"template\":[\"$\",\"$L13\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$\",\"$L12\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"direct-checkout\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"template\":[\"$\",\"$L13\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[[\"$\",\"main\",null,{\"className\":\"poko-direct-checkout\",\"children\":[[\"$\",\"div\",null,{\"className\":\"poko-direct-checkout-introduce\",\"children\":[[\"$\",\"div\",null,{\"className\":\"container mx-auto mx-poko-auto\",\"children\":[\"$\",\"div\",null,{\"className\":\"poko-direct-checkout-introduce__inner\",\"children\":[[\"$\",\"div\",null,{\"className\":\"poko-direct-checkout-introduce__left\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"title mb-4 sm:mb-6\",\"children\":[\"Direct\",[\"$\",\"br\",null,{}],\"Checkout\"]}],[\"$\",\"div\",null,{\"className\":\"purchasing mb-4 sm:mb-6\",\"children\":[\"$\",\"p\",null,{\"children\":[\"Purchasing web3\",[\"$\",\"br\",null,{}],\" assets made easy\"]}]}],[\"$\",\"p\",null,{\"className\":\"desc mb-8 sm:mb-6\",\"children\":\"Poko’s Direct Checkout enables one-step purchasing flow from any smart contract. Let users buy NFTs or in-game items and stake in DeFi using local payment methods without having to onramp to crypto themselves.\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col sm:flex-row sm:items-center gap-y-6 gap-x-2.5\",\"children\":[[\"$\",\"$L11\",null,{\"href\":\"https://flatfbx5wzx.typeform.com/to/MjnlYD26\",\"target\":\"_blank\",\"children\":[\"$\",\"$L14\",null,{\"className\":\"btn-primary\",\"children\":\"Join our waitlist\"}]}],[\"$\",\"a\",null,{\"className\":\"inline-flex items-center docs-link\",\"href\":\"https://docs.pokoapp.xyz/direct-checkout/what-is-direct-checkout\",\"target\":\"_blank\",\"children\":[[\"$\",\"span\",null,{\"children\":\"Read documentation\"}],[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"1em\",\"height\":\"1em\",\"fill\":\"none\",\"viewBox\":\"0 0 24 24\",\"className\":\"w-6 h-6 ml-1.5\",\"children\":[[\"$\",\"g\",null,{\"fill\":\"#E06F37\",\"clipPath\":\"url(#arrow-right-orange-outline_svg__a)\",\"children\":[[\"$\",\"path\",null,{\"d\":\"M11.994 24C18.571 24 24 18.569 24 12S18.56 0 11.983 0C5.417 0 0 5.431 0 12s5.429 12 11.994 12Zm0-2.39c-5.324 0-9.581-4.283-9.581-9.61 0-5.327 4.257-9.598 9.57-9.598A9.589 9.589 0 0 1 21.599 12a9.574 9.574 0 0 1-9.605 9.61Z\"}],[\"$\",\"path\",null,{\"d\":\"M17.597 11.176c.267.255.383.51.383.824 0 .325-.128.58-.383.836l-3.944 3.876a.954.954 0 0 1-.696.29c-.545 0-.94-.418-.94-.963 0-.29.105-.534.302-.708l1.415-1.346 1.3-1.045-2.379.104h-5.66c-.592 0-1.01-.452-1.01-1.044 0-.604.418-1.044 1.01-1.044h5.66l2.367.116-1.3-1.057L12.32 8.67a.997.997 0 0 1-.302-.708c0-.545.395-.951.94-.951.278 0 .51.092.696.278l3.944 3.888Z\"}]]}],[\"$\",\"defs\",null,{\"children\":[\"$\",\"clipPath\",null,{\"id\":\"arrow-right-orange-outline_svg__a\",\"children\":[\"$\",\"path\",null,{\"fill\":\"#fff\",\"d\":\"M0 0h24v24H0z\"}]}]}]]}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"poko-direct-checkout-introduce__right\",\"children\":[\"$\",\"div\",null,{\"className\":\"image-wrapper\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"images/ipad-checkout.gif\",\"alt\":\"checkout\",\"width\":336,\"height\":484,\"quality\":100,\"className\":\"mx-auto lg:mx-0 hidden sm:block\"}],[\"$\",\"$L10\",null,{\"src\":\"images/ipad-checkout.gif\",\"alt\":\"checkout\",\"width\":210,\"height\":290,\"quality\":100,\"className\":\"mx-auto block sm:hidden\"}]]}]}],[\"$\",\"$L10\",null,{\"className\":\"bg-section hidden sm:block\",\"src\":\"images/bg-section.png\",\"alt\":\"section\",\"width\":698,\"height\":740,\"quality\":100}],[\"$\",\"$L10\",null,{\"className\":\"bg-section block sm:hidden\",\"src\":\"images/bg-section-checkout-mobile.png\",\"alt\":\"section\",\"width\":304,\"height\":322,\"quality\":100}]]}]}],[\"$\",\"div\",null,{\"className\":\"poko-direct-checkout-transaction\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"title\",\"children\":[\"Transaction failure rates\",[\"$\",\"br\",null,{\"className\":\"hidden sm:block\"}],\" for onramping is high\"]}],[\"$\",\"div\",null,{\"className\":\"transaction-wrapper\",\"children\":[[\"$\",\"$L10\",null,{\"className\":\"mx-auto hidden lg:block\",\"src\":\"images/direct-transaction.png\",\"alt\":\"chart\",\"width\":935,\"height\":299,\"quality\":100}],[\"$\",\"$L10\",null,{\"className\":\"mx-auto block lg:hidden\",\"src\":\"images/direct-transaction-mobile.png\",\"alt\":\"chart\",\"width\":314,\"height\":715,\"quality\":100}]]}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"poko-direct-checkout-seamless\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto\",\"children\":[[\"$\",\"div\",null,{\"className\":\"seamless-head\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"title mb-3\",\"children\":[\"Seamless checkout for 42%\",[\"$\",\"br\",null,{\"className\":\"hidden lg:block\"}],\" more purchases\"]}],[\"$\",\"h2\",null,{\"className\":\"subtitle mb-9 sm:mb-6\",\"children\":[\"Get in touch with our team to learn how Poko can\",[\"$\",\"br\",null,{\"className\":\"hidden lg:block\"}],\" bring frictionless payments to your product.\"]}],[\"$\",\"div\",null,{\"className\":\"seamless-flow\",\"children\":[[\"$\",\"img\",null,{\"className\":\"hidden lg:block\",\"src\":\"images/seamless-flow.png\",\"width\":533,\"height\":94,\"quality\":100,\"alt\":\"seamless-flow\"}],[\"$\",\"img\",null,{\"className\":\"block lg:hidden\",\"src\":\"images/seamless-flow-mobile.png\",\"width\":314,\"height\":241,\"quality\":100,\"alt\":\"seamless-flow\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"web3-buying\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"title\",\"children\":[\"Web3 buying and staking with\",[\"$\",\"br\",null,{\"className\":\"hidden lg:block\"}],[\"$\",\"span\",null,{\"className\":\"highlight\",\"children\":\" one step\"}]]}],[\"$\",\"div\",null,{\"className\":\"web3-buying__section\",\"children\":[[\"$\",\"div\",null,{\"className\":\"order-2 lg:order-1\",\"children\":[\"$\",\"$L15\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"web3-buying-info\",\"children\":[[\"$\",\"p\",null,{\"className\":\"watermark-number\",\"children\":\"01\"}],[\"$\",\"h1\",null,{\"className\":\"web3-buying-info__title mb-2 sm:mb-4 max-w-[471px]\",\"children\":\"No KYC. No minimum purchase.\"}],[\"$\",\"p\",null,{\"className\":\"web3-buying-info__desc max-w-[471px]\",\"children\":\"Users can buy and stake in web3 with as low as US$0, without having to do KYC (up to US$2,000).\"}]]}]}]}],[\"$\",\"div\",null,{\"className\":\"order-1 lg:order-2\",\"children\":[\"$\",\"$L16\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"web3-buying-img\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"images/kyc.png\",\"alt\":\"kyc\",\"width\":542,\"height\":325,\"quality\":100,\"className\":\"mx-auto lg:mx-0 hidden sm:block\"}],[\"$\",\"$L10\",null,{\"src\":\"images/kyc-mobile.png\",\"alt\":\"kyc\",\"width\":271,\"height\":162,\"quality\":100,\"className\":\"mx-auto block sm:hidden\"}]]}]}]}]]}],[\"$\",\"div\",null,{\"className\":\"web3-buying__section padding-payment\",\"children\":[[\"$\",\"$L15\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"web3-buying-img\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"images/payment-methods-checkout.png\",\"alt\":\"payment-methods-checkout\",\"width\":550,\"height\":560,\"quality\":100,\"className\":\"mx-auto lg:mx-0 hidden sm:block\"}],[\"$\",\"$L10\",null,{\"src\":\"images/payment-methods-checkout.png\",\"alt\":\"payment-methods-checkout\",\"width\":275,\"height\":280,\"quality\":100,\"className\":\"mx-auto block sm:hidden\"}]]}]}],[\"$\",\"$L16\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"web3-buying-info\",\"children\":[[\"$\",\"div\",null,{\"className\":\"watermark-number\",\"children\":\"02\"}],[\"$\",\"h2\",null,{\"className\":\"web3-buying-info__title mb-2 sm:mb-4 max-w-[471px]\",\"children\":\"100+ payment methods\"}],[\"$\",\"p\",null,{\"className\":\"web3-buying-info__desc max-w-[471px]\",\"children\":\"Enable user to make payments for NFTs, in-game items, and staking directly using any local payment methods they want.\"}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"web3-buying__section padding-process\",\"children\":[[\"$\",\"div\",null,{\"className\":\"order-2 lg:order-1\",\"children\":[\"$\",\"$L15\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"web3-buying-info\",\"children\":[[\"$\",\"p\",null,{\"className\":\"watermark-number\",\"children\":\"03\"}],[\"$\",\"h1\",null,{\"className\":\"web3-buying-info__title mb-2 sm:mb-4 max-w-[471px]\",\"children\":\"Payment processing as low as 1%\"}],[\"$\",\"p\",null,{\"className\":\"web3-buying-info__desc max-w-[471px]\",\"children\":\"Let users save up to 10x compared to the compounded fees from onramping, swapping, then buying NFT or staking.\"}]]}]}]}],[\"$\",\"div\",null,{\"className\":\"order-1 lg:order-2\",\"children\":[\"$\",\"$L16\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"web3-buying-img\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"images/payment-process.png\",\"alt\":\"payment-process\",\"width\":594,\"height\":308,\"quality\":100,\"className\":\"mx-auto lg:mx-0 hidden sm:block\"}],[\"$\",\"$L10\",null,{\"src\":\"images/payment-process.png\",\"alt\":\"payment-process\",\"width\":297,\"height\":154,\"quality\":100,\"className\":\"mx-auto block sm:hidden\"}]]}]}]}]]}],[\"$\",\"div\",null,{\"className\":\"web3-buying__section padding-versatile\",\"children\":[[\"$\",\"$L15\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"web3-buying-img\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"images/versatile.png\",\"alt\":\"versatile\",\"width\":599,\"height\":488,\"quality\":100,\"className\":\"mx-auto lg:mx-0 hidden sm:block\"}],[\"$\",\"$L10\",null,{\"src\":\"images/versatile.png\",\"alt\":\"versatile\",\"width\":300,\"height\":244,\"quality\":100,\"className\":\"mx-auto block sm:hidden\"}]]}]}],[\"$\",\"$L16\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"web3-buying-info\",\"children\":[[\"$\",\"div\",null,{\"className\":\"watermark-number\",\"children\":\"04\"}],[\"$\",\"h2\",null,{\"className\":\"web3-buying-info__title mb-2 sm:mb-4 max-w-[471px]\",\"children\":\"Versatile deployment\"}],[\"$\",\"p\",null,{\"className\":\"web3-buying-info__desc max-w-[471px]\",\"children\":\"Selling web3 items expressed in web2 formats? Direct Checkout automates the backend process so users could receive their game item instantly.\"}]]}]}]]}]]}]]}]}],[\"$\",\"div\",null,{\"className\":\"poko-direct-checkout-web3\",\"children\":[[\"$\",\"div\",null,{\"className\":\"use-case container mx-auto\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"title mx-auto\",\"children\":\"Web3 use cases\"}],[\"$\",\"div\",null,{\"className\":\"use-case__box\",\"children\":[[\"$\",\"div\",\"0\",{\"className\":\"use-case__card\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"card-order\",\"style\":{\"fontFamily\":\"'__Inconsolata_a1c91c', '__Inconsolata_Fallback_a1c91c'\"},\"children\":\"01\"}],[\"$\",\"div\",null,{\"className\":\"card-body\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"card-title mb-2\",\"children\":\"NFT marketplaces\"}],[\"$\",\"p\",null,{\"className\":\"card-desc\",\"children\":\"Enable buyers to pay in fiat and receive NFTs, without having to buy crypto themselves.\"}]]}]]}],[\"$\",\"div\",\"1\",{\"className\":\"use-case__card\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"card-order\",\"style\":{\"fontFamily\":\"'__Inconsolata_a1c91c', '__Inconsolata_Fallback_a1c91c'\"},\"children\":\"02\"}],[\"$\",\"div\",null,{\"className\":\"card-body\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"card-title mb-2\",\"children\":\"DeFi protocols\"}],[\"$\",\"p\",null,{\"className\":\"card-desc\",\"children\":\"Allow users with no crypto on hand to stake directly with local payments.\"}]]}]]}],[\"$\",\"div\",\"2\",{\"className\":\"use-case__card\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"card-order\",\"style\":{\"fontFamily\":\"'__Inconsolata_a1c91c', '__Inconsolata_Fallback_a1c91c'\"},\"children\":\"03\"}],[\"$\",\"div\",null,{\"className\":\"card-body\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"card-title mb-2\",\"children\":\"Web3 games\"}],[\"$\",\"p\",null,{\"className\":\"card-desc\",\"children\":\"Let users purchase NFTs and in-game items with fiat seamlessly.\"}]]}]]}],[\"$\",\"div\",\"3\",{\"className\":\"use-case__card\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"card-order\",\"style\":{\"fontFamily\":\"'__Inconsolata_a1c91c', '__Inconsolata_Fallback_a1c91c'\"},\"children\":\"04\"}],[\"$\",\"div\",null,{\"className\":\"card-body\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"card-title mb-2\",\"children\":\"Embedded wallets\"}],[\"$\",\"p\",null,{\"className\":\"card-desc\",\"children\":\"Enable wallet users to purchase NFTs directly with local payments and earn transaction fees.\"}]]}]]}]]}],[\"$\",\"$L10\",null,{\"src\":\"images/ellipse.svg\",\"alt\":\"ellipse\",\"width\":117,\"height\":117,\"quality\":100,\"className\":\"ellipse-1\"}],[\"$\",\"$L10\",null,{\"src\":\"images/ellipse.svg\",\"alt\":\"ellipse\",\"width\":59,\"height\":59,\"quality\":100,\"className\":\"ellipse-2\"}]]}],[\"$\",\"div\",null,{\"className\":\"container mx-auto\",\"children\":[\"$\",\"div\",null,{\"className\":\"inner\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"title\",\"children\":[\"Make buying and staking\",[\"$\",\"br\",null,{}],\" simple in web3\"]}],[\"$\",\"$L11\",null,{\"href\":\"https://flatfbx5wzx.typeform.com/to/MjnlYD26\",\"target\":\"_blank\",\"children\":[\"$\",\"$L14\",null,{\"className\":\"btn-primary\",\"children\":\"Join our waitlist\"}]}]]}]}]]}]]}],null],\"segment\":\"__PAGE__\"},\"styles\":[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"_next/static/css/9d9423dda99788e5.css\",\"precedence\":\"next\"}]]}],\"segment\":\"direct-checkout\"},\"styles\":[]}],[\"$\",\"footer\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto\",\"children\":[[\"$\",\"div\",null,{\"className\":\"footer__upper flex justify-between flex-wrap\",\"children\":[[\"$\",\"div\",null,{\"className\":\"company-info\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"images/logo/logo-footer.svg\",\"alt\":\"logo-footer\",\"width\":170,\"height\":73,\"quality\":100}],[\"$\",\"p\",null,{\"className\":\"desc mt-1 mb-3\",\"children\":[\"Seamless fiat\",[\"$\",\"br\",null,{}],\" payments for web3\"]}],[\"$\",\"p\",null,{\"className\":\"registered mb-1\",\"children\":[\"Registered in the Republic of Singapore under \",[\"$\",\"br\",null,{}],\"Shoppalive Private Limited (UEN: 201729196G)\"]}],[\"$\",\"p\",null,{\"className\":\"registered\",\"children\":\"22 Sin Ming Lane #06-76 Midview City Singapore 573969\"}],[\"$\",\"ul\",null,{\"className\":\"flex gap-x-3 mt-2.5\",\"children\":[[\"$\",\"li\",null,{\"className\":\"contact-item\",\"children\":[\"$\",\"$L11\",null,{\"href\":\"https://twitter.com/poko_app\",\"target\":\"_blank\",\"children\":[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"1em\",\"height\":\"1em\",\"fill\":\"none\",\"viewBox\":\"0 0 24 24\",\"children\":[[\"$\",\"rect\",null,{\"width\":24,\"height\":24,\"fill\":\"#000\",\"rx\":12}],[\"$\",\"g\",null,{\"clipPath\":\"url(#twitter_svg__a)\",\"children\":[\"$\",\"path\",null,{\"fill\":\"#E06F37\",\"d\":\"M9.775 16.875c4.527 0 7.004-3.752 7.004-7.004 0-.106-.002-.213-.007-.319.482-.348.898-.78 1.228-1.274-.449.2-.925.33-1.413.386a2.475 2.475 0 0 0 1.082-1.361 4.948 4.948 0 0 1-1.562.597 2.465 2.465 0 0 0-4.197 2.245 6.992 6.992 0 0 1-5.074-2.57 2.465 2.465 0 0 0 .762 3.285 2.465 2.465 0 0 1-1.115-.307v.03a2.461 2.461 0 0 0 1.975 2.414 2.448 2.448 0 0 1-1.11.043 2.467 2.467 0 0 0 2.298 1.71A4.938 4.938 0 0 1 6 15.77a6.984 6.984 0 0 0 3.775 1.105Z\"}]}],[\"$\",\"defs\",null,{\"children\":[\"$\",\"clipPath\",null,{\"id\":\"twitter_svg__a\",\"children\":[\"$\",\"path\",null,{\"fill\":\"#fff\",\"d\":\"M6 6h12v12H6z\"}]}]}]]}]}]}],[\"$\",\"li\",null,{\"className\":\"contact-item\",\"children\":[\"$\",\"$L11\",null,{\"href\":\"https://www.linkedin.com/company/pokoapp/\",\"target\":\"_blank\",\"children\":[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"1em\",\"height\":\"1em\",\"fill\":\"none\",\"viewBox\":\"0 0 24 24\",\"children\":[[\"$\",\"rect\",null,{\"width\":24,\"height\":24,\"fill\":\"#000\",\"rx\":12}],[\"$\",\"g\",null,{\"clipPath\":\"url(#linkedin_svg__a)\",\"children\":[\"$\",\"path\",null,{\"fill\":\"#E06F37\",\"d\":\"M17.114 6H6.886A.886.886 0 0 0 6 6.886v10.228a.886.886 0 0 0 .886.886h10.228a.885.885 0 0 0 .886-.886V6.886A.886.886 0 0 0 17.114 6ZM9.577 16.223H7.773v-5.731h1.804v5.73Zm-.904-6.525a1.036 1.036 0 1 1 1.042-1.036 1.02 1.02 0 0 1-1.042 1.035Zm7.554 6.53h-1.804v-3.131c0-.924-.392-1.209-.899-1.209-.535 0-1.06.404-1.06 1.232v3.107H10.66v-5.731h1.735v.794h.023c.175-.352.785-.955 1.715-.955 1.007 0 2.095.597 2.095 2.347l-.001 3.545Z\"}]}],[\"$\",\"defs\",null,{\"children\":[\"$\",\"clipPath\",null,{\"id\":\"linkedin_svg__a\",\"children\":[\"$\",\"path\",null,{\"fill\":\"#fff\",\"d\":\"M6 6h12v12H6z\"}]}]}]]}]}]}],[\"$\",\"li\",null,{\"className\":\"contact-item\",\"children\":[\"$\",\"a\",null,{\"href\":\"mailto:hello@pokoapp.xyz\",\"children\":[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"1em\",\"height\":\"1em\",\"fill\":\"none\",\"viewBox\":\"0 0 32 32\",\"children\":[[\"$\",\"rect\",null,{\"width\":32,\"height\":32,\"fill\":\"#000\",\"rx\":16}],[\"$\",\"g\",null,{\"fill\":\"#E06F37\",\"clipPath\":\"url(#email_svg__a)\",\"children\":[[\"$\",\"path\",null,{\"d\":\"m23.97 11.695-5.613 5.612a3.338 3.338 0 0 1-4.714 0L8.03 11.695C8.02 11.8 8 11.895 8 12v8a3.337 3.337 0 0 0 3.333 3.333h9.334A3.337 3.337 0 0 0 24 20v-8c0-.105-.021-.2-.03-.305Z\"}],[\"$\",\"path\",null,{\"d\":\"m17.415 16.364 6.09-6.09a3.324 3.324 0 0 0-2.838-1.607h-9.334a3.324 3.324 0 0 0-2.837 1.607l6.09 6.09a2.005 2.005 0 0 0 2.829 0Z\"}]]}],[\"$\",\"defs\",null,{\"children\":[\"$\",\"clipPath\",null,{\"id\":\"email_svg__a\",\"children\":[\"$\",\"path\",null,{\"fill\":\"#fff\",\"d\":\"M8 8h16v16H8z\"}]}]}]]}]}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"menu\",\"children\":[[\"$\",\"div\",null,{\"className\":\"menu-section\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"title mb-3\",\"children\":\"Poko\"}],[\"$\",\"ul\",null,{\"className\":\"sub-menu\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"\",\"children\":\"Home\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"team\",\"children\":\"Team\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"post\",\"children\":\"Blog\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"menu-section\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"title mb-3\",\"children\":\"Product\"}],[\"$\",\"ul\",null,{\"className\":\"sub-menu\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"onramp-aggregator\",\"children\":\"Onramp Aggregator\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"direct-checkout\",\"children\":\"Direct Checkout\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"menu-section\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"title mb-3\",\"children\":\"Legal\"}],[\"$\",\"ul\",null,{\"className\":\"sub-menu\",\"children\":[\"$\",\"li\",null,{\"children\":[\"$\",\"$L11\",null,{\"href\":\"terms-of-service\",\"children\":\"Terms of Service\"}]}]}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"footer__lower\",\"children\":[[\"$\",\"hr\",null,{}],[\"$\",\"p\",null,{\"className\":\"copyright mt-6\",\"children\":\"© 2023 Poko\"}]]}]]}]}]]}]}]}],null]}]]\n"])</script>
+    <script>self.__next_f.push([1, "f:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script>
+    <script>self.__next_f.push([1, "b:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"1\",{\"children\":\"Poko: Seamless Fiat Payments for Web3\"}],[\"$\",\"meta\",\"2\",{\"name\":\"description\",\"content\":\"Enable local payments and successful onramping for wallets, NFT marketplaces, web3 games, and dApps globally.\"}],[\"$\",\"meta\",\"3\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"link\",\"4\",{\"rel\":\"icon\",\"href\":\"favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"any\"}],[\"$\",\"link\",\"5\",{\"rel\":\"apple-touch-icon\",\"href\":\"apple-icon.png?abbdac36ac372596\",\"type\":\"image/png\",\"sizes\":\"256x256\"}]]\n"])</script>
+</body>
+
+</html>

@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="preload"
+      as="font"
+      href="/_next/static/media/376dd8dc38524313-s.p.woff2"
+      crossorigin=""
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/_next/static/media/7777133e901cd5ed-s.p.woff2"
+      crossorigin=""
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/_next/static/media/916d3686010a8de2-s.p.woff2"
+      crossorigin=""
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/_next/static/media/9a881e2ac07d406b-s.p.woff2"
+      crossorigin=""
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/_next/static/media/d869208648ca5469-s.p.woff2"
+      crossorigin=""
+      type="font/woff2"
+    />
+    <link
+      rel="stylesheet"
+      href="/_next/static/css/e6527ffefb74104a.css"
+      data-precedence="next"
+    />
+    <link
+      rel="stylesheet"
+      href="/_next/static/css/189afaaddc5c0650.css"
+      data-precedence="next"
+    />
+    <title>Poko: Seamless Fiat Payments for Web3</title>
+    <meta
+      name="description"
+      content="Enable local payments and successful onramping for wallets, NFT marketplaces, web3 games, and dApps globally."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
+    <link
+      rel="apple-touch-icon"
+      href="/apple-icon.png?abbdac36ac372596"
+      type="image/png"
+      sizes="256x256"
+    />
+    <meta name="next-size-adjust" />
+    <script
+      src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"
+      nomodule=""
+    ></script>
+  </head>
+  <body class="__className_49fe58">
+    <header>
+      <div class="inner">
+        <div class="container mx-auto mx-poko-auto">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <a href="/">
+                <img
+                  alt="logo"
+                  loading="lazy"
+                  width="130"
+                  height="55"
+                  decoding="async"
+                  data-nimg="1"
+                  class="hidden sm:block"
+                  style="color: transparent"
+                  src="/images/logo/logo.svg"
+                />
+              </a>
+              <a href="/">
+                <img
+                  alt="logo"
+                  loading="lazy"
+                  width="87"
+                  height="37"
+                  decoding="async"
+                  data-nimg="1"
+                  class="block sm:hidden"
+                  style="color: transparent"
+                  src="/images/logo/logo-mobile.svg"
+                />
+              </a>
+              <ul class="ml-5 flex items-center menu">
+                <li class="menu-item">
+                  <a href="/">Home</a>
+                </li>
+                <li class="menu-item">
+                  <span class="ant-dropdown-trigger flex items-center">
+                    Product
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      fill="none"
+                      viewBox="0 0 20 20"
+                      class="ml-2.5"
+                    >
+                      <path
+                        fill="#DBDBDB"
+                        d="M10 13.206a.803.803 0 0 0 .584-.264l4.771-4.884a.715.715 0 0 0 .213-.521.74.74 0 0 0-.74-.747c-.201 0-.396.082-.54.226l-4.282 4.4-4.294-4.4a.781.781 0 0 0-.54-.226.74.74 0 0 0-.74.747c0 .207.075.383.213.521l4.777 4.884c.17.176.358.264.578.264Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </li>
+                <li class="menu-item">
+                  <a href="/post">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="hidden lg:block">
+              <a href="https://dashboard.onramp.pokoapp.xyz/#">
+                <button
+                  type="button"
+                  class="ant-btn ant-btn-default btn-primary"
+                >
+                  <span>Dashboard login </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                    class="ml-1.5 w-5 h-5"
+                  >
+                    <g clip-path="url(#arrow-right-circle_svg__a)">
+                      <path
+                        fill="#fff"
+                        d="M10 20c5.484 0 10.01-4.526 10.01-10S15.474 0 9.99 0C4.516 0 0 4.526 0 10s4.526 10 10 10Zm5.193-10.01c0 .29-.106.513-.338.735l-3.414 3.356a.854.854 0 0 1-.619.252c-.474 0-.812-.358-.812-.842 0-.242.096-.464.26-.619l1.22-1.16 1.121-.9-2.06.097H5.667c-.522 0-.89-.387-.89-.909 0-.532.378-.919.89-.919h4.884l2.06.097-1.131-.9-1.21-1.16a.886.886 0 0 1-.26-.619c0-.484.338-.832.812-.832.252 0 .445.068.619.242l3.414 3.366c.242.222.338.445.338.715Z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="arrow-right-circle_svg__a">
+                        <path fill="#fff" d="M0 0h20v20H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </a>
+            </div>
+            <div class="block lg:hidden">
+              <button type="button" class="ant-btn ant-btn-default burger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 19 13"
+                >
+                  <rect width="19" height="3" fill="#fff" rx="1.5"></rect>
+                  <rect width="19" height="3" y="5" fill="#fff" rx="1.5"></rect>
+                  <rect
+                    width="19"
+                    height="3"
+                    y="10"
+                    fill="#fff"
+                    rx="1.5"
+                  ></rect>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-mobile-wrapper">
+        <ul class="menu-mobile">
+          <li class="menu-item menu-item--border mb-6">
+            <a href="/">Home</a>
+          </li>
+          <li class="menu-item">Product</li>
+          <li class="menu-item active">
+            <a href="/card">Card</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="#DBDBDB"
+                d="M13.206 10a.803.803 0 0 0-.264-.584L8.058 4.645a.715.715 0 0 0-.521-.214.74.74 0 0 0-.747.741c0 .201.081.396.226.54l4.4 4.282-4.4 4.294a.781.781 0 0 0-.226.54c0 .414.333.74.747.74a.715.715 0 0 0 .52-.213l4.885-4.777a.776.776 0 0 0 .264-.578Z"
+              ></path>
+            </svg>
+          </li>
+          <li class="menu-item">
+            <a href="/onramp-aggregator">Onramp Aggregator</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="#DBDBDB"
+                d="M13.206 10a.803.803 0 0 0-.264-.584L8.058 4.645a.715.715 0 0 0-.521-.214.74.74 0 0 0-.747.741c0 .201.081.396.226.54l4.4 4.282-4.4 4.294a.781.781 0 0 0-.226.54c0 .414.333.74.747.74a.715.715 0 0 0 .52-.213l4.885-4.777a.776.776 0 0 0 .264-.578Z"
+              ></path>
+            </svg>
+          </li>
+          <li class="menu-item menu-item--border mb-6">
+            <a href="/direct-checkout">Direct Checkout</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="#DBDBDB"
+                d="M13.206 10a.803.803 0 0 0-.264-.584L8.058 4.645a.715.715 0 0 0-.521-.214.74.74 0 0 0-.747.741c0 .201.081.396.226.54l4.4 4.282-4.4 4.294a.781.781 0 0 0-.226.54c0 .414.333.74.747.74a.715.715 0 0 0 .52-.213l4.885-4.777a.776.776 0 0 0 .264-.578Z"
+              ></path>
+            </svg>
+          </li>
+          <li class="menu-item mb-6">
+            <a href="/post">Blog</a>
+          </li>
+          <li class="menu-item">
+            <a href="/team">Team</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="poko-card">
+      <div class="poko-card-introduce">
+        <div class="container mx-auto mx-poko-auto">
+          <div class="poko-card-introduce__inner">
+            <div class="poko-card-introduce__left">
+              <h1 class="title mb-6">Card</h1>
+              <div class="offramp mb-6">
+                <p>Offramp with 0% fees with a self-issued Mastercard</p>
+              </div>
+              <p class="desc mb-12">
+                Poko’s Card enables offramping from your crypto wallet into a
+                Mastercard. Create a card in less than 1 minute, spend online
+                and offline anywhere, and earn interest on your card balance.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center gap-x-2.5 gap-y-5"
+              >
+                <a target="_blank" href="https://offramp.pokoapp.xyz/">
+                  <button
+                    type="button"
+                    class="ant-btn ant-btn-default btn-primary"
+                  >
+                    <span>Create Card</span>
+                  </button>
+                </a>
+                <a
+                  class="inline-flex items-center docs-link"
+                  href="https://pokoapp.gitbook.io/card-offramp-faqs/"
+                  target="_blank"
+                >
+                  <span>Read documentation</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="w-6 h-6 ml-1.5"
+                  >
+                    <g
+                      fill="#E06F37"
+                      clip-path="url(#arrow-right-circle-orange_svg__a)"
+                    >
+                      <path
+                        d="M11.994 24C18.571 24 24 18.569 24 12S18.56 0 11.983 0C5.417 0 0 5.431 0 12s5.429 12 11.994 12Zm0-2.39c-5.324 0-9.581-4.283-9.581-9.61 0-5.327 4.257-9.598 9.57-9.598A9.589 9.589 0 0 1 21.599 12a9.574 9.574 0 0 1-9.605 9.61Z"
+                      ></path>
+                      <path
+                        d="M17.597 11.176c.267.255.383.51.383.824 0 .325-.128.58-.383.836l-3.944 3.876a.954.954 0 0 1-.696.29c-.545 0-.94-.418-.94-.963 0-.29.105-.534.302-.708l1.415-1.346 1.3-1.045-2.378.105H6.995c-.592 0-1.01-.453-1.01-1.045 0-.603.418-1.044 1.01-1.044h5.66l2.367.116-1.3-1.056-1.403-1.347a.997.997 0 0 1-.301-.708c0-.545.394-.951.94-.951.278 0 .51.093.695.278l3.944 3.888Z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="arrow-right-circle-orange_svg__a">
+                        <path fill="#fff" d="M0 0h24v24H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="poko-card-introduce__right">
+              <img
+                alt="card"
+                loading="lazy"
+                width="362"
+                height="225"
+                decoding="async"
+                data-nimg="1"
+                class="mx-auto"
+                style="color: transparent"
+                srcset="
+                  /_next/image?url=%2Fimages%2Fcard.png&amp;w=384&amp;q=100 1x,
+                  /_next/image?url=%2Fimages%2Fcard.png&amp;w=750&amp;q=100 2x
+                "
+                src="/_next/image?url=%2Fimages%2Fcard.png&amp;w=750&amp;q=100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="poko-card-benefits">
+        <h1 class="title mb-9">Key benefits of Card</h1>
+        <div class="poko-card-benefits__section">
+          <div class="container mx-auto">
+            <div class="section-active">
+              <div class="inner offramp">
+                <div class="order-2 lg:order-1">
+                  <div>
+                    <div style="opacity: 0; transform: translateX(-50%)">
+                      <div class="poko-card-benefits__section__info">
+                        <div class="watermark-number">01</div>
+                        <h2 class="title mb-4 max-w-[471px]">
+                          0% offramp fee anywhere
+                        </h2>
+                        <p class="desc max-w-[471px] mb-4">
+                          Enjoy a nice meal at a new city, buy groceries, try
+                          out Youtube Premium, and everything in between with
+                          your Card for zero offramp fee!
+                        </p>
+                        <p class="note max-w-[471px]">
+                          *Applies when users hold a US$500 balance on the Card.
+                          1% fee applies otherwise.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                  <div>
+                    <div style="opacity: 0; transform: translateX(50%)">
+                      <div class="poko-features__section__img">
+                        <img
+                          alt="offramp-fee"
+                          loading="lazy"
+                          width="499"
+                          height="412"
+                          decoding="async"
+                          data-nimg="1"
+                          style="color: transparent"
+                          srcset="
+                            /_next/image?url=%2Fimages%2Fofframp-fee.png&amp;w=640&amp;q=100  1x,
+                            /_next/image?url=%2Fimages%2Fofframp-fee.png&amp;w=1080&amp;q=100 2x
+                          "
+                          src="/_next/image?url=%2Fimages%2Fofframp-fee.png&amp;w=1080&amp;q=100"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="poko-card-benefits__section">
+          <div class="container mx-auto">
+            <div class="inner stablecoin">
+              <div>
+                <div style="opacity: 0; transform: translateX(-50%)">
+                  <div class="poko-features__section__img">
+                    <img
+                      alt="stablecoin"
+                      loading="lazy"
+                      width="513"
+                      height="316"
+                      decoding="async"
+                      data-nimg="1"
+                      style="color: transparent"
+                      srcset="
+                        /_next/image?url=%2Fimages%2Fstablecoin.png&amp;w=640&amp;q=100  1x,
+                        /_next/image?url=%2Fimages%2Fstablecoin.png&amp;w=1080&amp;q=100 2x
+                      "
+                      src="/_next/image?url=%2Fimages%2Fstablecoin.png&amp;w=1080&amp;q=100"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div style="opacity: 0; transform: translateX(50%)">
+                  <div class="poko-card-benefits__section__info">
+                    <div class="watermark-number">02</div>
+                    <h2 class="title mb-4">
+                      Spend stablecoins<br />online and offline
+                    </h2>
+                    <p class="desc max-w-[471px]">
+                      Top up USD in your Card with USDC or USDT. Spend online on
+                      Visa and Mastercard network and offline through Alipay,
+                      Wechat Pay, Apple Pay, or Google Pay.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="poko-card-benefits__section">
+          <div class="container mx-auto">
+            <div class="inner setup">
+              <div class="order-2 lg:order-1">
+                <div>
+                  <div style="opacity: 0; transform: translateX(-50%)">
+                    <div class="poko-card-benefits__section__info">
+                      <div class="watermark-number">03</div>
+                      <h2 class="title mb-4">
+                        Card setup in under<br />1 minute
+                      </h2>
+                      <p class="desc max-w-[471px]">
+                        Once your crypto wallet is connected to our Card offramp
+                        page, you automatically have a virtual USD Mastercard
+                        for easy spend!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-1 lg:order-2">
+                <div>
+                  <div style="opacity: 0; transform: translateX(50%)">
+                    <div class="poko-features__section__img">
+                      <img
+                        alt="card-setup"
+                        loading="lazy"
+                        width="653"
+                        height="464"
+                        decoding="async"
+                        data-nimg="1"
+                        style="color: transparent"
+                        srcset="
+                          /_next/image?url=%2Fimages%2Fcard-setup.png&amp;w=750&amp;q=100  1x,
+                          /_next/image?url=%2Fimages%2Fcard-setup.png&amp;w=1920&amp;q=100 2x
+                        "
+                        src="/_next/image?url=%2Fimages%2Fcard-setup.png&amp;w=1920&amp;q=100"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="poko-card-benefits__section">
+          <div class="container mx-auto">
+            <div class="inner balance">
+              <div>
+                <div style="opacity: 0; transform: translateX(-50%)">
+                  <div class="poko-features__section__img">
+                    <img
+                      alt="interest-balance"
+                      loading="lazy"
+                      width="446"
+                      height="367"
+                      decoding="async"
+                      data-nimg="1"
+                      style="color: transparent"
+                      srcset="
+                        /_next/image?url=%2Fimages%2Finterest-balance.png&amp;w=640&amp;q=100  1x,
+                        /_next/image?url=%2Fimages%2Finterest-balance.png&amp;w=1080&amp;q=100 2x
+                      "
+                      src="/_next/image?url=%2Fimages%2Finterest-balance.png&amp;w=1080&amp;q=100"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div style="opacity: 0; transform: translateX(50%)">
+                  <div class="poko-card-benefits__section__info">
+                    <div class="watermark-number">04</div>
+                    <h2 class="title mb-4">
+                      Up to 4%* interest<br />on Card balances
+                    </h2>
+                    <p class="desc max-w-[471px] mb-4">
+                      We hold your funds in 1-6 months US Government Treasuries
+                      custodied with BNY Mellon so you earn yield on your
+                      balances while you sleep.
+                    </p>
+                    <p class="note">*Historical APY for the past 6 months.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="poko-card-ways">
+        <div class="container mx-auto">
+          <h1 class="title">Explore ways to use Card</h1>
+          <div
+            class="flex flex-col sm:flex-row items-stretch justify-center gap-[30px] mb-[65px]"
+          >
+            <div class="inner">
+              <img
+                alt="way-to-use"
+                loading="lazy"
+                width="410"
+                height="300"
+                decoding="async"
+                data-nimg="1"
+                class="mx-auto h-[300px]"
+                style="color: transparent"
+                srcset="
+                  /_next/image?url=%2Fimages%2Fway-1.png&amp;w=640&amp;q=100 1x,
+                  /_next/image?url=%2Fimages%2Fway-1.png&amp;w=828&amp;q=100 2x
+                "
+                src="/_next/image?url=%2Fimages%2Fway-1.png&amp;w=828&amp;q=100"
+              />
+              <h2 class="inner__title mt-6 mb-3">Company spend</h2>
+              <p class="inner__desc">
+                make purchases, from software subscriptions to travels.
+              </p>
+            </div>
+            <div class="inner">
+              <img
+                alt="way-to-use"
+                loading="lazy"
+                width="410"
+                height="300"
+                decoding="async"
+                data-nimg="1"
+                class="mx-auto"
+                style="color: transparent"
+                srcset="
+                  /_next/image?url=%2Fimages%2Fway-2.png&amp;w=640&amp;q=100 1x,
+                  /_next/image?url=%2Fimages%2Fway-2.png&amp;w=828&amp;q=100 2x
+                "
+                src="/_next/image?url=%2Fimages%2Fway-2.png&amp;w=828&amp;q=100"
+              />
+              <h2 class="inner__title mt-6 mb-3">Individual spend</h2>
+              <p class="inner__desc">
+                transportation, and order food from anywhere.
+              </p>
+            </div>
+          </div>
+          <div class="spend-stablecoin">
+            <h1 class="spend-stablecoin__title yellow">
+              Spend your stablecoins anywhere.
+            </h1>
+            <h1 class="spend-stablecoin__title orange">
+              Earn interest on card balance.
+            </h1>
+            <div class="mt-6 text-center">
+              <a target="_blank" href="https://offramp.pokoapp.xyz/">
+                <button
+                  type="button"
+                  class="ant-btn ant-btn-default btn-primary"
+                >
+                  <span>Create Card</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container mx-auto">
+        <div class="footer__upper flex justify-between flex-wrap">
+          <div class="company-info">
+            <img
+              alt="logo-footer"
+              loading="lazy"
+              width="170"
+              height="73"
+              decoding="async"
+              data-nimg="1"
+              style="color: transparent"
+              src="/images/logo/logo-footer.svg"
+            />
+            <p class="desc mt-1 mb-3">Seamless fiat<br />payments for web3</p>
+            <p class="registered mb-1">
+              Registered in the Republic of Singapore under <br />Shoppalive
+              Private Limited (UEN: 201729196G)
+            </p>
+            <p class="registered">
+              22 Sin Ming Lane #06-76 Midview City Singapore 573969
+            </p>
+            <ul class="flex gap-x-3 mt-2.5">
+              <li class="contact-item">
+                <a target="_blank" href="https://twitter.com/poko_app">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect width="24" height="24" fill="#000" rx="12"></rect>
+                    <g clip-path="url(#twitter_svg__a)">
+                      <path
+                        fill="#E06F37"
+                        d="M9.775 16.875c4.527 0 7.004-3.752 7.004-7.004 0-.106-.002-.213-.007-.319.482-.348.898-.78 1.228-1.274-.449.2-.925.33-1.413.386a2.475 2.475 0 0 0 1.082-1.361 4.948 4.948 0 0 1-1.562.597 2.465 2.465 0 0 0-4.197 2.245 6.992 6.992 0 0 1-5.074-2.57 2.465 2.465 0 0 0 .762 3.285 2.465 2.465 0 0 1-1.115-.307v.03a2.461 2.461 0 0 0 1.975 2.414 2.448 2.448 0 0 1-1.11.043 2.467 2.467 0 0 0 2.298 1.71A4.938 4.938 0 0 1 6 15.77a6.984 6.984 0 0 0 3.775 1.105Z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="twitter_svg__a">
+                        <path fill="#fff" d="M6 6h12v12H6z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li class="contact-item">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/pokoapp/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect width="24" height="24" fill="#000" rx="12"></rect>
+                    <g clip-path="url(#linkedin_svg__a)">
+                      <path
+                        fill="#E06F37"
+                        d="M17.114 6H6.886A.886.886 0 0 0 6 6.886v10.228a.886.886 0 0 0 .886.886h10.228a.885.885 0 0 0 .886-.886V6.886A.886.886 0 0 0 17.114 6ZM9.577 16.223H7.773v-5.731h1.804v5.73Zm-.904-6.525a1.036 1.036 0 1 1 1.042-1.036 1.02 1.02 0 0 1-1.042 1.035Zm7.554 6.53h-1.804v-3.131c0-.924-.392-1.209-.899-1.209-.535 0-1.06.404-1.06 1.232v3.107H10.66v-5.731h1.735v.794h.023c.175-.352.785-.955 1.715-.955 1.007 0 2.095.597 2.095 2.347l-.001 3.545Z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="linkedin_svg__a">
+                        <path fill="#fff" d="M6 6h12v12H6z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li class="contact-item">
+                <a href="mailto:hello@pokoapp.xyz">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="none"
+                    viewBox="0 0 32 32"
+                  >
+                    <rect width="32" height="32" fill="#000" rx="16"></rect>
+                    <g fill="#E06F37" clip-path="url(#email_svg__a)">
+                      <path
+                        d="m23.97 11.695-5.613 5.612a3.338 3.338 0 0 1-4.714 0L8.03 11.695C8.02 11.8 8 11.895 8 12v8a3.337 3.337 0 0 0 3.333 3.333h9.334A3.337 3.337 0 0 0 24 20v-8c0-.105-.021-.2-.03-.305Z"
+                      ></path>
+                      <path
+                        d="m17.415 16.364 6.09-6.09a3.324 3.324 0 0 0-2.838-1.607h-9.334a3.324 3.324 0 0 0-2.837 1.607l6.09 6.09a2.005 2.005 0 0 0 2.829 0Z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="email_svg__a">
+                        <path fill="#fff" d="M8 8h16v16H8z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu">
+            <div class="menu-section">
+              <h3 class="title mb-3">Poko</h3>
+              <ul class="sub-menu">
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/team">Team</a>
+                </li>
+                <li>
+                  <a href="/post">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-section">
+              <h3 class="title mb-3">Product</h3>
+              <ul class="sub-menu">
+                <li>
+                  <a href="/card">Card</a>
+                </li>
+                <li>
+                  <a href="/onramp-aggregator">Onramp Aggregator</a>
+                </li>
+                <li>
+                  <a href="/direct-checkout">Direct Checkout</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-section">
+              <h3 class="title mb-3">Legal</h3>
+              <ul class="sub-menu">
+                <li>
+                  <a href="/terms-of-service">Terms of Service</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__lower">
+          <hr />
+          <p class="copyright mt-6">© 2023 Poko</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="/_next/static/chunks/webpack-6a23766f925ca993.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/bce60fc1-629c48d6034b681d.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/769-d5a27e39def89ee3.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/main-app-e6458dc727967c63.js"
+      async=""
+    ></script>
+    <script>
+      (self.__next_f = self.__next_f || []).push([0]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '1:HL["/_next/static/media/376dd8dc38524313-s.p.woff2",{"as":"font","type":"font/woff2"}]\n2:HL["/_next/static/media/7777133e901cd5ed-s.p.woff2",{"as":"font","type":"font/woff2"}]\n3:HL["/_next/static/media/916d3686010a8de2-s.p.woff2",{"as":"font","type":"font/woff2"}]\n4:HL["/_next/static/media/9a881e2ac07d406b-s.p.woff2",{"as":"font","type":"font/woff2"}]\n5:HL["/_next/static/media/d869208648ca5469-s.p.woff2",{"as":"font","type":"font/woff2"}]\n6:HL["/_next/static/css/e6527ffefb74104a.css",{"as":"style"}]\n0:"$L',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([1, '7"\n']);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '8:HL["/_next/static/css/189afaaddc5c0650.css",{"as":"style"}]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '9:I{"id":"68802","chunks":["272:static/chunks/webpack-6a23766f925ca993.js","253:static/chunks/bce60fc1-629c48d6034b681d.js","769:static/chunks/769-d5a27e39def89ee3.js"],"name":"","async":false}\nb:I{"id":"14299","chunks":["272:static/chunks/webpack-6a23766f925ca993.js","253:static/chunks/bce60fc1-629c48d6034b681d.js","769:static/chunks/769-d5a27e39def89ee3.js"],"name":"","async":false}\nc:I{"id":"13964","chunks":["962:static/chunks/962-8a1af9d332838414.js","354:static/chunks/354-da1997ae34b77999.js","757:stat',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        'ic/chunks/757-6afa3e8a416167e9.js","913:static/chunks/913-737fc9bfab33e087.js","949:static/chunks/949-dd3ff34ea18c43a6.js","102:static/chunks/102-dad9777d5c947949.js","842:static/chunks/app/onramp-aggregator/page-2715c047a5b51ee0.js"],"name":"ConfigProvider","async":false}\nd:I{"id":"94176","chunks":["962:static/chunks/962-8a1af9d332838414.js","354:static/chunks/354-da1997ae34b77999.js","757:static/chunks/757-6afa3e8a416167e9.js","477:static/chunks/477-4d9fcb5f3e06827e.js","913:static/chunks/913-737fc9bfab33',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        'e087.js","949:static/chunks/949-dd3ff34ea18c43a6.js","185:static/chunks/app/layout-d5b11b1acc8254ae.js"],"name":"","async":false}\nf:I{"id":"85962","chunks":["550:static/chunks/925f3d25-1af7259455ef26bd.js","962:static/chunks/962-8a1af9d332838414.js","354:static/chunks/354-da1997ae34b77999.js","757:static/chunks/757-6afa3e8a416167e9.js","477:static/chunks/477-4d9fcb5f3e06827e.js","913:static/chunks/913-737fc9bfab33e087.js","380:static/chunks/380-2c660472ab6bc38a.js","605:static/chunks/app/post/[slug]/page-3e',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '2f3241c40bb614.js"],"name":"","async":false}\n10:I{"id":"57477","chunks":["550:static/chunks/925f3d25-1af7259455ef26bd.js","962:static/chunks/962-8a1af9d332838414.js","354:static/chunks/354-da1997ae34b77999.js","757:static/chunks/757-6afa3e8a416167e9.js","477:static/chunks/477-4d9fcb5f3e06827e.js","913:static/chunks/913-737fc9bfab33e087.js","380:static/chunks/380-2c660472ab6bc38a.js","605:static/chunks/app/post/[slug]/page-3e2f3241c40bb614.js"],"name":"","async":false}\n11:I{"id":"13211","chunks":["272:static',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '/chunks/webpack-6a23766f925ca993.js","253:static/chunks/bce60fc1-629c48d6034b681d.js","769:static/chunks/769-d5a27e39def89ee3.js"],"name":"","async":false}\n12:I{"id":"5767","chunks":["272:static/chunks/webpack-6a23766f925ca993.js","253:static/chunks/bce60fc1-629c48d6034b681d.js","769:static/chunks/769-d5a27e39def89ee3.js"],"name":"","async":false}\n13:I{"id":"13964","chunks":["962:static/chunks/962-8a1af9d332838414.js","354:static/chunks/354-da1997ae34b77999.js","757:static/chunks/757-6afa3e8a416167e9.js","9',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '13:static/chunks/913-737fc9bfab33e087.js","949:static/chunks/949-dd3ff34ea18c43a6.js","102:static/chunks/102-dad9777d5c947949.js","842:static/chunks/app/onramp-aggregator/page-2715c047a5b51ee0.js"],"name":"Button","async":false}\n14:I{"id":"87380","chunks":["962:static/chunks/962-8a1af9d332838414.js","354:static/chunks/354-da1997ae34b77999.js","757:static/chunks/757-6afa3e8a416167e9.js","913:static/chunks/913-737fc9bfab33e087.js","949:static/chunks/949-dd3ff34ea18c43a6.js","102:static/chunks/102-dad9777d5c94',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '7949.js","842:static/chunks/app/onramp-aggregator/page-2715c047a5b51ee0.js"],"name":"AnimateLeftIn","async":false}\n15:I{"id":"87380","chunks":["962:static/chunks/962-8a1af9d332838414.js","354:static/chunks/354-da1997ae34b77999.js","757:static/chunks/757-6afa3e8a416167e9.js","913:static/chunks/913-737fc9bfab33e087.js","949:static/chunks/949-dd3ff34ea18c43a6.js","102:static/chunks/102-dad9777d5c947949.js","842:static/chunks/app/onramp-aggregator/page-2715c047a5b51ee0.js"],"name":"AnimateRightIn","async":false',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([1, "}\n"]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '7:[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e6527ffefb74104a.css","precedence":"next"}]],["$","$L9",null,{"buildId":"cEa87yW8LxDKoHT3zvI_I","assetPrefix":"","initialCanonicalUrl":"/card","initialTree":["",{"children":["card",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"initialHead":["$La",["$","meta",null,{"name":"next-size-adjust"}]],"globalErrorComponent":"$b","notFound":["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__className_49fe58","children":["$","$Lc",null,{"theme":{"hashed":false,"token":{"fontFamily":"\'__Poppins_49fe58\', \'__Poppins_Fallback_49fe58\'"}},"children":[["$","$Ld",null,{}],["$Le","$undefined",[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\\"Segoe UI\\",Roboto,Helvetica,Arial,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],["$","footer",null,{"children":["$","div",null,{"className":"container mx-auto","children":[["$","div",null,{"className":"footer__upper flex justify-between flex-wrap","children":[["$","div",null,{"className":"company-info","children":[["$","$Lf",null,{"src":"/images/logo/logo-footer.svg","alt":"logo-footer","width":170,"height":73,"quality":100}],["$","p",null,{"className":"desc mt-1 mb-3","children":["Seamless fiat",["$","br",null,{}]," payments for web3"]}],["$","p",null,{"className":"registered mb-1","children":["Registered in the Republic of Singapore under ",["$","br",null,{}],"Shoppalive Private Limited (UEN: 201729196G)"]}],["$","p",null,{"className":"registered","children":"22 Sin Ming Lane #06-76 Midview City Singapore 573969"}],["$","ul",null,{"className":"flex gap-x-3 mt-2.5","children":[["$","li",null,{"className":"contact-item","children":["$","$L10",null,{"href":"https://twitter.com/poko_app","target":"_blank","children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","fill":"none","viewBox":"0 0 24 24","children":[["$","rect",null,{"width":24,"height":24,"fill":"#000","rx":12}],["$","g",null,{"clipPath":"url(#twitter_svg__a)","children":["$","path",null,{"fill":"#E06F37","d":"M9.775 16.875c4.527 0 7.004-3.752 7.004-7.004 0-.106-.002-.213-.007-.319.482-.348.898-.78 1.228-1.274-.449.2-.925.33-1.413.386a2.475 2.475 0 0 0 1.082-1.361 4.948 4.948 0 0 1-1.562.597 2.465 2.465 0 0 0-4.197 2.245 6.992 6.992 0 0 1-5.074-2.57 2.465 2.465 0 0 0 .762 3.285 2.465 2.465 0 0 1-1.115-.307v.03a2.461 2.461 0 0 0 1.975 2.414 2.448 2.448 0 0 1-1.11.043 2.467 2.467 0 0 0 2.298 1.71A4.938 4.938 0 0 1 6 15.77a6.984 6.984 0 0 0 3.775 1.105Z"}]}],["$","defs",null,{"children":["$","clipPath",null,{"id":"twitter_svg__a","children":["$","path",null,{"fill":"#fff","d":"M6 6h12v12H6z"}]}]}]]}]}]}],["$","li",null,{"className":"contact-item","children":["$","$L10",null,{"href":"https://www.linkedin.com/company/pokoapp/","target":"_blank","children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","fill":"none","viewBox":"0 0 24 24","children":[["$","rect",null,{"width":24,"height":24,"fill":"#000","rx":12}],["$","g",null,{"clipPath":"url(#linkedin_svg__a)","children":["$","path",null,{"fill":"#E06F37","d":"M17.114 6H6.886A.886.886 0 0 0 6 6.886v10.228a.886.886 0 0 0 .886.886h10.228a.885.885 0 0 0 .886-.886V6.886A.886.886 0 0 0 17.114 6ZM9.577 16.223H7.773v-5.731h1.804v5.73Zm-.904-6.525a1.036 1.036 0 1 1 1.042-1.036 1.02 1.02 0 0 1-1.042 1.035Zm7.554 6.53h-1.804v-3.131c0-.924-.392-1.209-.899-1.209-.535 0-1.06.404-1.06 1.232v3.107H10.66v-5.731h1.735v.794h.023c.175-.352.785-.955 1.715-.955 1.007 0 2.095.597 2.095 2.347l-.001 3.545Z"}]}],["$","defs",null,{"children":["$","clipPath",null,{"id":"linkedin_svg__a","children":["$","path",null,{"fill":"#fff","d":"M6 6h12v12H6z"}]}]}]]}]}]}],["$","li",null,{"className":"contact-item","children":["$","a",null,{"href":"mailto:hello@pokoapp.xyz","children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","fill":"none","viewBox":"0 0 32 32","children":[["$","rect",null,{"width":32,"height":32,"fill":"#000","rx":16}],["$","g",null,{"fill":"#E06F37","clipPath":"url(#email_svg__a)","children":[["$","path",null,{"d":"m23.97 11.695-5.613 5.612a3.338 3.338 0 0 1-4.714 0L8.03 11.695C8.02 11.8 8 11.895 8 12v8a3.337 3.337 0 0 0 3.333 3.333h9.334A3.337 3.337 0 0 0 24 20v-8c0-.105-.021-.2-.03-.305Z"}],["$","path",null,{"d":"m17.415 16.364 6.09-6.09a3.324 3.324 0 0 0-2.838-1.607h-9.334a3.324 3.324 0 0 0-2.837 1.607l6.09 6.09a2.005 2.005 0 0 0 2.829 0Z"}]]}],["$","defs",null,{"children":["$","clipPath",null,{"id":"email_svg__a","children":["$","path",null,{"fill":"#fff","d":"M8 8h16v16H8z"}]}]}]]}]}]}]]}]]}],["$","div",null,{"className":"menu","children":[["$","div",null,{"className":"menu-section","children":[["$","h3",null,{"className":"title mb-3","children":"Poko"}],["$","ul",null,{"className":"sub-menu","children":[["$","li",null,{"children":["$","$L10",null,{"href":"/","children":"Home"}]}],["$","li",null,{"children":["$","$L10",null,{"href":"/team","children":"Team"}]}],["$","li",null,{"children":["$","$L10",null,{"href":"/post","children":"Blog"}]}]]}]]}],["$","div",null,{"className":"menu-section","children":[["$","h3",null,{"className":"title mb-3","children":"Product"}],["$","ul",null,{"className":"sub-menu","children":[["$","li",null,{"children":["$","$L10",null,{"href":"/card","children":"Card"}]}],["$","li",null,{"children":["$","$L10",null,{"href":"/onramp-aggregator","children":"Onramp Aggregator"}]}],["$","li",null,{"children":["$","$L10",null,{"href":"/direct-checkout","children":"Direct Checkout"}]}]]}]]}],["$","div",null,{"className":"menu-section","children":[["$","h3",null,{"className":"title mb-3","children":"Legal"}],["$","ul",null,{"className":"sub-menu","children":["$","li",null,{"children":["$","$L10",null,{"href":"/terms-of-service","children":"Terms of Service"}]}]}]]}]]}]]}],["$","div",null,{"className":"footer__lower","children":[["$","hr",null,{}],["$","p",null,{"className":"copyright mt-6","children":"© 2023 Poko"}]]}]]}]}]]}]}]}],"asNotFound":false,"children":[["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__className_49fe58","children":["$","$Lc",null,{"theme":{"hashed":false,"token":{"fontFamily":"\'__Poppins_49fe58\', \'__Poppins_Fallback_49fe58\'"}},"children":[["$","$Ld",null,{}],["$","$L11",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L12",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L11",null,{"parallelRouterKey":"children","segmentPath":["children","card","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L12",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","main",null,{"className":"poko-card","children":[["$","div",null,{"className":"poko-card-introduce","children":["$","div",null,{"className":"container mx-auto mx-poko-auto","children":["$","div",null,{"className":"poko-card-introduce__inner","children":[["$","div",null,{"className":"poko-card-introduce__left","children":[["$","h1",null,{"className":"title mb-6","children":"Card"}],["$","div",null,{"className":"offramp mb-6","children":["$","p",null,{"children":"Offramp with 0% fees with a self-issued Mastercard"}]}],["$","p",null,{"className":"desc mb-12","children":"Poko’s Card enables offramping from your crypto wallet into a Mastercard. Create a card in less than 1 minute, spend online and offline anywhere, and earn interest on your card balance."}],["$","div",null,{"className":"flex flex-col sm:flex-row sm:items-center gap-x-2.5 gap-y-5","children":[["$","$L10",null,{"href":"https://offramp.pokoapp.xyz/","target":"_blank","children":["$","$L13",null,{"className":"btn-primary","children":"Create Card"}]}],["$","a",null,{"className":"inline-flex items-center docs-link","href":"https://pokoapp.gitbook.io/card-offramp-faqs/","target":"_blank","children":[["$","span",null,{"children":"Read documentation"}],["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","fill":"none","viewBox":"0 0 24 24","className":"w-6 h-6 ml-1.5","children":[["$","g",null,{"fill":"#E06F37","clipPath":"url(#arrow-right-circle-orange_svg__a)","children":[["$","path",null,{"d":"M11.994 24C18.571 24 24 18.569 24 12S18.56 0 11.983 0C5.417 0 0 5.431 0 12s5.429 12 11.994 12Zm0-2.39c-5.324 0-9.581-4.283-9.581-9.61 0-5.327 4.257-9.598 9.57-9.598A9.589 9.589 0 0 1 21.599 12a9.574 9.574 0 0 1-9.605 9.61Z"}],["$","path",null,{"d":"M17.597 11.176c.267.255.383.51.383.824 0 .325-.128.58-.383.836l-3.944 3.876a.954.954 0 0 1-.696.29c-.545 0-.94-.418-.94-.963 0-.29.105-.534.302-.708l1.415-1.346 1.3-1.045-2.378.105H6.995c-.592 0-1.01-.453-1.01-1.045 0-.603.418-1.044 1.01-1.044h5.66l2.367.116-1.3-1.056-1.403-1.347a.997.997 0 0 1-.301-.708c0-.545.394-.951.94-.951.278 0 .51.093.695.278l3.944 3.888Z"}]]}],["$","defs",null,{"children":["$","clipPath",null,{"id":"arrow-right-circle-orange_svg__a","children":["$","path",null,{"fill":"#fff","d":"M0 0h24v24H0z"}]}]}]]}]]}]]}]]}],["$","div",null,{"className":"poko-card-introduce__right","children":["$","$Lf",null,{"className":"mx-auto","src":"/images/card.png","alt":"card","width":362,"height":225,"quality":100}]}]]}]}]}],["$","div",null,{"className":"poko-card-benefits","children":[["$","h1",null,{"className":"title mb-9","children":"Key benefits of Card"}],["$","div",null,{"className":"poko-card-benefits__section","children":["$","div",null,{"className":"container mx-auto","children":["$","div",null,{"className":"section-active","children":["$","div",null,{"className":"inner offramp","children":[["$","div",null,{"className":"order-2 lg:order-1","children":["$","$L14",null,{"children":["$","div",null,{"className":"poko-card-benefits__section__info","children":[["$","div",null,{"className":"watermark-number","children":"01"}],["$","h2",null,{"className":"title mb-4 max-w-[471px]","children":"0% offramp fee anywhere"}],["$","p",null,{"className":"desc max-w-[471px] mb-4","children":"Enjoy a nice meal at a new city, buy groceries, try out Youtube Premium, and everything in between with your Card for zero offramp fee!"}],["$","p",null,{"className":"note max-w-[471px]","children":"*Applies when users hold a US$500 balance on the Card. 1% fee applies otherwise."}]]}]}]}],["$","div",null,{"className":"order-1 lg:order-2","children":["$","$L15",null,{"children":["$","div",null,{"className":"poko-features__section__img","children":["$","$Lf",null,{"src":"/images/offramp-fee.png","alt":"offramp-fee","width":499,"height":412,"quality":100}]}]}]}]]}]}]}]}],["$","div",null,{"className":"poko-card-benefits__section","children":["$","div",null,{"className":"container mx-auto","children":["$","div",null,{"className":"inner stablecoin","children":[["$","$L14",null,{"children":["$","div",null,{"className":"poko-features__section__img","children":["$","$Lf",null,{"src":"/images/stablecoin.png","alt":"stablecoin","width":513,"height":316,"quality":100}]}]}],["$","$L15",null,{"children":["$","div",null,{"className":"poko-card-benefits__section__info","children":[["$","div",null,{"className":"watermark-number","children":"02"}],["$","h2",null,{"className":"title mb-4","children":["Spend stablecoins",["$","br",null,{}]," online and offline"]}],["$","p",null,{"className":"desc max-w-[471px]","children":"Top up USD in your Card with USDC or USDT. Spend online on Visa and Mastercard network and offline through Alipay, Wechat Pay, Apple Pay, or Google Pay."}]]}]}]]}]}]}],["$","div",null,{"className":"poko-card-benefits__section","children":["$","div",null,{"className":"container mx-auto","children":["$","div",null,{"className":"inner setup","children":[["$","div",null,{"className":"order-2 lg:order-1","children":["$","$L14",null,{"children":["$","div",null,{"className":"poko-card-benefits__section__info","children":[["$","div",null,{"className":"watermark-number","children":"03"}],["$","h2",null,{"className":"title mb-4","children":["Card setup in under",["$","br",null,{}]," 1 minute"]}],["$","p",null,{"className":"desc max-w-[471px]","children":"Once your crypto wallet is connected to our Card offramp page, you automatically have a virtual USD Mastercard for easy spend!"}]]}]}]}],["$","div",null,{"className":"order-1 lg:order-2","children":["$","$L15",null,{"children":["$","div",null,{"className":"poko-features__section__img","children":["$","$Lf",null,{"src":"/images/card-setup.png","alt":"card-setup","width":653,"height":464,"quality":100}]}]}]}]]}]}]}],["$","div",null,{"className":"poko-card-benefits__section","children":["$","div",null,{"className":"container mx-auto","children":["$","div",null,{"className":"inner balance","children":[["$","$L14",null,{"children":["$","div",null,{"className":"poko-features__section__img","children":["$","$Lf",null,{"src":"/images/interest-balance.png","alt":"interest-balance","width":446,"height":367,"quality":100}]}]}],["$","$L15",null,{"children":["$","div",null,{"className":"poko-card-benefits__section__info","children":[["$","div",null,{"className":"watermark-number","children":"04"}],["$","h2",null,{"className":"title mb-4","children":["Up to 4%* interest",["$","br",null,{}]," on Card balances"]}],["$","p",null,{"className":"desc max-w-[471px] mb-4","children":"We hold your funds in 1-6 months US Government Treasuries custodied with BNY Mellon so you earn yield on your balances while you sleep."}],["$","p",null,{"className":"note","children":"*Historical APY for the past 6 months."}]]}]}]]}]}]}]]}],["$","div",null,{"className":"poko-card-ways","children":["$","div",null,{"className":"container mx-auto","children":[["$","h1",null,{"className":"title","children":"Explore ways to use Card"}],["$","div",null,{"className":"flex flex-col sm:flex-row items-stretch justify-center gap-[30px] mb-[65px]","children":[["$","div",null,{"className":"inner","children":[["$","$Lf",null,{"className":"mx-auto h-[300px]","src":"/images/way-1.png","alt":"way-to-use","width":410,"height":300,"quality":100}],["$","h2",null,{"className":"inner__title mt-6 mb-3","children":"Company spend"}],["$","p",null,{"className":"inner__desc","children":"make purchases, from software subscriptions to travels."}]]}],["$","div",null,{"className":"inner","children":[["$","$Lf",null,{"className":"mx-auto","src":"/images/way-2.png","alt":"way-to-use","width":410,"height":300,"quality":100}],["$","h2",null,{"className":"inner__title mt-6 mb-3","children":"Individual spend"}],["$","p",null,{"className":"inner__desc","children":"transportation, and order food from anywhere."}]]}]]}],["$","div",null,{"className":"spend-stablecoin","children":[["$","h1",null,{"className":"spend-stablecoin__title yellow","children":"Spend your stablecoins anywhere."}],["$","h1",null,{"className":"spend-stablecoin__title orange","children":"Earn interest on card balance."}],["$","div",null,{"className":"mt-6 text-center","children":["$","$L10",null,{"href":"https://offramp.pokoapp.xyz/","target":"_blank","children":["$","$L13",null,{"className":"btn-primary","children":"Create Card"}]}]}]]}]]}]}]]}],null],"segment":"__PAGE__"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/189afaaddc5c0650.css","precedence":"next"}]]}],"segment":"card"},"styles":[]}],["$","footer",null,{"children":["$","div",null,{"className":"container mx-auto","children":[["$","div",null,{"className":"footer__upper flex justify-between flex-wrap","children":[["$","div",null,{"className":"company-info","children":[["$","$Lf",null,{"src":"/images/logo/logo-footer.svg","alt":"logo-footer","width":170,"height":73,"quality":100}],["$","p",null,{"className":"desc mt-1 mb-3","children":["Seamless fiat",["$","br",null,{}]," payments for web3"]}],["$","p",null,{"className":"registered mb-1","children":["Registered in the Republic of Singapore under ",["$","br",null,{}],"Shoppalive Private Limited (UEN: 201729196G)"]}],["$","p",null,{"className":"registered","children":"22 Sin Ming Lane #06-76 Midview City Singapore 573969"}],["$","ul",null,{"className":"flex gap-x-3 mt-2.5","children":[["$","li",null,{"className":"contact-item","children":["$","$L10",null,{"href":"https://twitter.com/poko_app","target":"_blank","children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","fill":"none","viewBox":"0 0 24 24","children":[["$","rect",null,{"width":24,"height":24,"fill":"#000","rx":12}],["$","g",null,{"clipPath":"url(#twitter_svg__a)","children":["$","path",null,{"fill":"#E06F37","d":"M9.775 16.875c4.527 0 7.004-3.752 7.004-7.004 0-.106-.002-.213-.007-.319.482-.348.898-.78 1.228-1.274-.449.2-.925.33-1.413.386a2.475 2.475 0 0 0 1.082-1.361 4.948 4.948 0 0 1-1.562.597 2.465 2.465 0 0 0-4.197 2.245 6.992 6.992 0 0 1-5.074-2.57 2.465 2.465 0 0 0 .762 3.285 2.465 2.465 0 0 1-1.115-.307v.03a2.461 2.461 0 0 0 1.975 2.414 2.448 2.448 0 0 1-1.11.043 2.467 2.467 0 0 0 2.298 1.71A4.938 4.938 0 0 1 6 15.77a6.984 6.984 0 0 0 3.775 1.105Z"}]}],["$","defs",null,{"children":["$","clipPath",null,{"id":"twitter_svg__a","children":["$","path",null,{"fill":"#fff","d":"M6 6h12v12H6z"}]}]}]]}]}]}],["$","li",null,{"className":"contact-item","children":["$","$L10",null,{"href":"https://www.linkedin.com/company/pokoapp/","target":"_blank","children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","fill":"none","viewBox":"0 0 24 24","children":[["$","rect",null,{"width":24,"height":24,"fill":"#000","rx":12}],["$","g",null,{"clipPath":"url(#linkedin_svg__a)","children":["$","path",null,{"fill":"#E06F37","d":"M17.114 6H6.886A.886.886 0 0 0 6 6.886v10.228a.886.886 0 0 0 .886.886h10.228a.885.885 0 0 0 .886-.886V6.886A.886.886 0 0 0 17.114 6ZM9.577 16.223H7.773v-5.731h1.804v5.73Zm-.904-6.525a1.036 1.036 0 1 1 1.042-1.036 1.02 1.02 0 0 1-1.042 1.035Zm7.554 6.53h-1.804v-3.131c0-.924-.392-1.209-.899-1.209-.535 0-1.06.404-1.06 1.232v3.107H10.66v-5.731h1.735v.794h.023c.175-.352.785-.955 1.715-.955 1.007 0 2.095.597 2.095 2.347l-.001 3.545Z"}]}],["$","defs",null,{"children":["$","clipPath",null,{"id":"linkedin_svg__a","children":["$","path",null,{"fill":"#fff","d":"M6 6h12v12H6z"}]}]}]]}]}]}],["$","li",null,{"className":"contact-item","children":["$","a",null,{"href":"mailto:hello@pokoapp.xyz","children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","fill":"none","viewBox":"0 0 32 32","children":[["$","rect",null,{"width":32,"height":32,"fill":"#000","rx":16}],["$","g",null,{"fill":"#E06F37","clipPath":"url(#email_svg__a)","children":[["$","path",null,{"d":"m23.97 11.695-5.613 5.612a3.338 3.338 0 0 1-4.714 0L8.03 11.695C8.02 11.8 8 11.895 8 12v8a3.337 3.337 0 0 0 3.333 3.333h9.334A3.337 3.337 0 0 0 24 20v-8c0-.105-.021-.2-.03-.305Z"}],["$","path",null,{"d":"m17.415 16.364 6.09-6.09a3.324 3.324 0 0 0-2.838-1.607h-9.334a3.324 3.324 0 0 0-2.837 1.607l6.09 6.09a2.005 2.005 0 0 0 2.829 0Z"}]]}],["$","defs",null,{"children":["$","clipPath",null,{"id":"email_svg__a","children":["$","path",null,{"fill":"#fff","d":"M8 8h16v16H8z"}]}]}]]}]}]}]]}]]}],["$","div",null,{"className":"menu","children":[["$","div",null,{"className":"menu-section","children":[["$","h3",null,{"className":"title mb-3","children":"Poko"}],["$","ul",null,{"className":"sub-menu","children":[["$","li",null,{"children":["$","$L10",null,{"href":"/","children":"Home"}]}],["$","li",null,{"children":["$","$L10",null,{"href":"/team","children":"Team"}]}],["$","li",null,{"children":["$","$L10",null,{"href":"/post","children":"Blog"}]}]]}]]}],["$","div",null,{"className":"menu-section","children":[["$","h3",null,{"className":"title mb-3","children":"Product"}],["$","ul",null,{"className":"sub-menu","children":[["$","li",null,{"children":["$","$L10",null,{"href":"/card","children":"Card"}]}],["$","li",null,{"children":["$","$L10",null,{"href":"/onramp-aggregator","children":"Onramp Aggregator"}]}],["$","li",null,{"children":["$","$L10",null,{"href":"/direct-checkout","children":"Direct Checkout"}]}]]}]]}],["$","div",null,{"className":"menu-section","children":[["$","h3",null,{"className":"title mb-3","children":"Legal"}],["$","ul",null,{"className":"sub-menu","children":["$","li",null,{"children":["$","$L10",null,{"href":"/terms-of-service","children":"Terms of Service"}]}]}]]}]]}]]}],["$","div",null,{"className":"footer__lower","children":[["$","hr",null,{}],["$","p",null,{"className":"copyright mt-6","children":"© 2023 Poko"}]]}]]}]}]]}]}]}],null]}]]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        'e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        'a:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Poko: Seamless Fiat Payments for Web3"}],["$","meta","2",{"name":"description","content":"Enable local payments and successful onramping for wallets, NFT marketplaces, web3 games, and dApps globally."}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"any"}],["$","link","5",{"rel":"apple-touch-icon","href":"/apple-icon.png?abbdac36ac372596","type":"image/png","sizes":"256x256"}]]\n',
+      ]);
+    </script>
+  </body>
+</html>
